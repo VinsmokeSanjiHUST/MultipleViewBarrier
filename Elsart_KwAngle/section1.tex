@@ -1,0 +1,234 @@
+To solve this problem, the monitoring region is partitioned into several small rectangles using the proposed Dynamic Partition method. After that, we try to figure out if there is a continuous barrier from the left side to the right side of the region consisting of rectangles which are ($k-\omega$) covered. The details are shown in the subsequent sections.
+
+\subsubsection{$(k-\omega)$ verification on a rectangle}
+% introduction idea
+Based on theorem 2, we can conclude that in order to verify the $(k-\omega)$ coverage on a rectangle, it is only necessary to check whether all four vertices of that rectangle is $(k-\omega)$ covered by an common list of sensors. Using this conclusion, we propose an algorithm to verify whether a rectangle is $(k-\omega)$ covered or not, and for the optimisation of the second problem, we try to find the list that $(k-\omega)$ cover the rectangle with the largest coverage value toward it. 
+% 4 steps
+The idea of our algorithm can be described as follows:
+\begin{description}
+	\item[Step 1:] First, we find a set of sensors $G$ that cover four vertices of the rectangle $ ABCD $.
+	\item[Step 2:] Choose a list of $k$ sensors from $G$ satisfies that the point $A$ is $(k-\omega)$ covered by these $k$ sensors.
+	\item[Step 3:] If found any, check all of those lists and take the ones that also $(k-\omega)$ cover the 3 remaining vertices of the considered rectangle.
+	\item[Step 4:] Among all the list taken, return the one with the largest coverage value toward the considered rectangle.
+\end{description}
+The key to implement this idea is at step 2. Our approach to this problem is very natural. First, sort $G$ in counter-clockwise order around $A$. Then, we consider each sensor in $G$ sequentially. If the sensor being considered satisfies some conditions, we put it into a list (call this list $L$). We do that until size of $L$ is equal to $k$. Then, $L$ is called a valid list. Figure \ref{finding} illustrates how to choose a valid list. In figure \ref{finding}, black vector denotes the sensor that is chosen to put into the list, while red vector denotes candidates to be chosen.
+
+\begin{figure}[h]
+	\begin{minipage}{.3\linewidth}
+		\includegraphics[scale=.5]{setSensors_1.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.3\linewidth}
+		\includegraphics[scale=.5]{setSensors_2.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.3\linewidth}
+		\includegraphics[scale=.5]{setSensors_3.pdf}
+	\end{minipage}
+	\\
+	\begin{minipage}{.3\linewidth}
+		\includegraphics[scale=.5]{setSensors_4.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.3\linewidth}
+		\includegraphics[scale=.5]{setSensors_5.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.3\linewidth}
+		\includegraphics[scale=.5]{setSensors_6.pdf}
+	\end{minipage}\\
+	\caption{$L=\{S_1, S_4, S_9, S_{13}, S_{17}\}$ is a valid list with $k=5, \omega=60^o$}
+	\label{finding}
+\end{figure}
+
+As aforementioned, when considering a sensor in $G$, it must satisfies some conditions to become candidate to be put into the list $L$. Suppose that at some point of the finding process, the list has {\sf\itshape index} elements and {\sf\itshape $L$[index] = $G$[cur]}, {\sf\itshape 1} $\leq$ {\sf\itshape cur} $\leq$ {\sf\itshape $n$}, $n$ is size of $G$. If {\sf\itshape $G$[next]} is chosen to be the next element in $L$, it must satisfy two conditions:
+\begin{itemize}
+	\item $(\overrightarrow{\vphantom{\overrightarrow{P}}PG\textsf{[cur]}}, \overrightarrow{\vphantom{\overrightarrow{P}}PG\textsf{[next]}}) > \omega \qquad (1)$
+	\item $(\overrightarrow{\vphantom{\overrightarrow{P}}PG\textsf{[next]}}, \overrightarrow{\vphantom{\overrightarrow{P}}PL\textsf{[1]}}) > (k-\textsf{index})\omega \qquad (2)$
+\end{itemize}
+From definition of ($k-\omega$) coverage, condition (1) is clearly necessary. However, it's not sufficient for {\sf\itshape $G$[next]} to become a candidate for the next position in $L$. If $L$ is a valid list, we have $(\overrightarrow{\vphantom{\overrightarrow{P}}PL[i]}, \overrightarrow{\vphantom{\overrightarrow{P}}PL[i+1]}) > \omega, i = \overline{1,k}$ (consider $k + 1 = 1$). Hence, $(\overrightarrow{\vphantom{\overrightarrow{P}}PL\textsf{[index + 1]}}, \overrightarrow{\vphantom{\overrightarrow{P}}PL[1]}) = \displaystyle\sum\limits_{i=\textsf{\scriptsize index} + 1}^{k}(\overrightarrow{\vphantom{\overrightarrow{P}}PL[i]}, \overrightarrow{\vphantom{\overrightarrow{P}}PL[i+1]}) > (k-\textsf{index})\omega$.
+Since we are choosing candidate for {\sf (index + 1)-th} element in $L$, {\sf $G$[next]} corresponds to {\sf $L$[index + 1]}. Thus, (2) is also a necessary condition.\\[7pt]
+Algorithm \ref{algo00} and Algorithm \ref{algo01} shows the details of our algorithm. The function in Algorithm \ref{algo01} is a support function for Algorithm \ref{algo00}. {\tt RecurFinding(cur)} is a recursive function that finds candidate for {\sf (index + 1)-th} position in $L$ knowing that there is a set {\sf cur} containing the chosen sensors, in which the last sensor has index {\sf last}. It considers elements in $G$ sequentially from {\sf (last + 1)-th} element and checks if these elements satisfy condition (1) and (2). The return value of {\tt RecurFinding(cur)} is a set containing all the lists of sensors that ($k-\omega$) cover the point $P$ which takes the current sublist ($\{L\textsf{[1]}, L\textsf{[1]},..., L\textsf{[index]}\}$) as its first {\sf index} elements exists. This return value is used to support the recursion process of the algorithm.
+
+\noindent\begin{minipage}{.49\linewidth}
+	\begin{algorithm}[H]
+		\DontPrintSemicolon 
+		\SetAlgoLined
+		\newcommand{\forcondi}[2]{\ensuremath{#1 \in #2}}
+		\SetKwData{found}{found}
+		\SetKwData{Gsize}{G.size}
+		\SetKw{true}{true}
+		\SetKw{false}{false}
+		\SetKwData{and}{\&\&}
+		\SetKwData{equal}{==}
+		\SetKwData{greater}{$\geq$}
+		\SetKwData{notFound}{!found}
+		\SetKwData{k}{k}
+		\SetKwData{n}{n}
+		\newcommand{\forcond}[3]{\ensuremath{#1 = #2\ \KwTo\ #3}}
+		\BlankLine
+		\KwIn{
+			A point {\sf P} and a set {\sf G} consisting of {\sf n} sensors that cover {\sf P}.
+		}
+		\KwOut{
+			\k sensors that ($\mathsf{k-\omega}$) covers {\sf P}. There is possibility that no output is found.
+		}
+		\BlankLine
+		\BlankLine
+		Let {\sf L} store the output\;
+		Sort {\sf G} in counter-clockwise order around {\sf P}\;
+		$L \leftarrow \emptyset$\;
+		\For{\forcond{i}{1}{n}}{
+			$temp \leftarrow {\tt RecurFinding(G{i})}$\;
+			$L \leftarrow L \cup temp$\;
+		}
+		\caption{Find all lists of $k$ sensors that ({\sf $k-\omega$}) covers point $P$}
+		\label{algo00}
+	\end{algorithm}
+\end{minipage}
+\hfill
+\begin{minipage}{.49\linewidth}
+	\begin{algorithm}[H]
+		\DontPrintSemicolon
+		%	\SetAlgoNoLine
+		%	\SetAlgoNoEnd
+		\newcommand{\forcondi}[2]{\ensuremath{#1 \in #2}}
+		\SetKwData{found}{found}
+		\SetKwData{Gsize}{G.size}
+		\SetKw{true}{true}
+		\SetKw{false}{false}
+		\SetKwData{and}{\&\&}
+		\SetKwData{equal}{==}
+		\SetKwData{greater}{$\geq$}
+		\SetKwData{notFound}{!found}
+		\SetKwData{k}{k}
+		\SetKwData{n}{n}
+		\SetKwData{cur}{cur}
+		\SetKwArray{G}{G}
+		\SetKwArray{L}{L}
+		\SetKwData{P}{P}
+		\SetKwFunction{Recur}{RecurFinding}
+		\SetKwData{paratwo}{\tt index + 2, i}
+		\SetKwData{paraone}{index + 1}
+		\SetKwData{index}{index}
+		\SetKw{return}{return}
+		\SetKwProg{Fn}{}{}{end}
+		\newcommand{\forcond}[3]{\ensuremath{#1 = #2\ \KwTo\ #3}}
+		\BlankLine
+		\KwIn{
+			A list of sensors that is currently chosen, contains \index sensors.
+		}
+		\KwOut{
+			All lists of \k sensors that ($k-\omega$) cover the point \sf P beginning with the input list.
+		}
+		\BlankLine
+		\BlankLine
+		\Fn{\tt RecurFinding({\sf cur})}{
+			$L \leftarrow \emptyset$\;
+			$\index \leftarrow$ cardinality of {\sf cur}\;
+			\If{m \equal k}{\return {\sf \{cur\}}}
+			$last \leftarrow$ index of last element in {\sf cur}\; 
+			$first \leftarrow$ index of first element in {\sf cur}\;
+			\For{\forcond{i}{last + 1}{\n}}{
+				\If{
+					$(\overrightarrow{\vphantom{\overrightarrow{P}} \P\G{last}}, \overrightarrow{\vphantom{\overrightarrow{P}} \P\G{i}}) > \omega$ \and
+					$(\overrightarrow{\vphantom{\overrightarrow{P}} \P\G{i}}, \overrightarrow{\vphantom{\overrightarrow{P}} \P\G{first}}) > (\k - \index + 1)\omega$
+				}{
+					$temp \leftarrow$ {\tt RecurFinding({\sf cur} + (\G{i}))}\;
+					$L \leftarrow L \cup temp$\;
+				}
+			}
+			\return L\;
+		}
+		\caption{Find {\sf index + 1} element in {\sf L}}
+		\label{algo01}
+	\end{algorithm}
+\end{minipage}
+
+%\begin{figure*}[!h]
+%\noindent\begin{minipage}{.49\linewidth}
+%\includegraphics{Algo_1.pdf}
+%\end{minipage}\hfill
+%\begin{minipage}{.49\linewidth}
+%\includegraphics{Algo_2.pdf}
+%\end{minipage}
+%\end{figure*}
+
+The first element of $L$ can be any sensor in $G$ since it doesn't require any condition. For convenient, we choose $L[1]=G[1]$. Thus, {\tt RecurFinding(\{G[1]\})} is called to start the finding process. After function call {\tt RecurFinding(\{G[1]\})}, the function will return all the satisfied lists containing G[1]. The finding process stops when we have called {\tt RecurFinding(\{G[$i$]\})} with every $i$ from 1 to n. And the algorithm will output a set containing all the lists of sensors that ($k-\omega$) cover the considered point $P$.
+
+\subsubsection{Finding a barrier in a monitoring region}
+
+
+a, Partitioning the monitoring region by Dynamic Partition method
+
+\label{subsection1}
+
+To find a barrier in the monitoring region, we first determine the areas that are $(k-\omega)$ covered inside the monitoring region. To solve this problem, we partition the monitoring region into multiple small rectangles and check whether these rectangles are $(k-\omega)$ covered or not. However, uniform partitioning often requires a high computation time especially when the monitoring region is large. To overcome this challenge, we propose a new partition method called Dynamic Partition. The idea is: only the rectangle regions which are not $(k-\omega)$ covered will be partitioned into smaller rectangles, otherwise, they are kept untouched. \\
+The first rectangle to be checked is the monitoring region. 
+Using the algorithm in subsection 1, if a rectangle is $(k-\omega)$ covered, mark it as true, otherwise, split it into four equal sub-rectangles. After a rectangle is split, smaller rectangles are generated and the process of checking and splitting is applied to these new rectangles. A rectangle will not be split if it is $(k-\omega)$ covered or its size reaches a predefined limited value. The smaller the limited size is, the more precise the result of our algorithm gets. This condition guarantees our algorithm not to go into an infinite loop. The process is illustrated in Figure \ref{dynamic}.
+%\input{DynamicPartition}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=1.]{Dynamic_Partition.pdf}
+	\end{center}
+	\caption{Illustration of Dynamic Partitioning}
+	\label{dynamic}
+\end{figure}
+
+The pseudo code of the method is described in Algorithm \ref{alg1}
+%
+
+%
+\begin{center}
+	\begin{minipage}{.7\linewidth}
+		\begin{algorithm}[H]
+			\DontPrintSemicolon
+			\SetAlgoLined
+			\newcommand{\forcondi}[2]{\ensuremath{#1 \in #2}}
+			\SetKwData{Rcen}{root.center}
+			\SetKwData{root}{rootRec}
+			\SetKwData{RX}{root.sizeX}\SetKwData{RY}{root.sizeY}
+			\SetKwData{L}{L}\SetKwData{W}{W}
+			\SetKwData{QUEUE}{Q}
+			\SetKwData{tempNode}{tempRec}
+			\SetKwData{coveredGroup}{coveredGroup}
+			\SetKwFunction{FAC}{findAndCheck}
+			\SetKwData{coveredNodes}{coveredRectangles}
+			\SetKwData{DMAX}{DMAX}
+			\SetKwFunction{split}{split()}
+			\SetKwFunction{makeNode}{makeNode}
+			\SetKwFunction{dequeue}{dequeue}
+			\SetKwFunction{check}{check}
+			\SetKwData{tnRank}{tempRec.rank}
+			\SetKwData{element}{element}
+			\BlankLine
+			\KwIn{
+				\begin{itemize}
+					\item Length and width of the monitering region $\Omega$: \L, \W respectively
+					\item A set of sensors $S$
+					\item Maximum depth of quad-tree: \DMAX
+				\end{itemize}
+			}
+			\KwOut{A set of covered rectangles}
+			\BlankLine
+			\BlankLine
+			Let \coveredNodes store the output\;
+			Let \root denote the monitoring region\;
+			$\QUEUE\gets\emptyset$\;
+			add \root to \QUEUE \;
+			\While{$\QUEUE \neq\emptyset$}{
+				$\tempNode\gets$ \dequeue{\QUEUE}\;
+				Check if \tempNode is $(k-\omega)$ covered\;
+				\uIf{\tempNode is $(k-\omega)$ covered}{add \tempNode to \coveredNodes\;}
+				\ElseIf{\tnRank $<\DMAX$}{split \tempNode in into 4 sub-rectangles\;
+					add 4 sub-rectangles of \tempNode to \QUEUE}
+			}
+			\caption{Dynamic Partition}
+			\label{alg1}
+		\end{algorithm}
+	\end{minipage}
+\end{center}
+
+b, Finding a $(k-\omega)$ coverage barrier
+
+After procedure in \ref{subsection1}, we now have a set $ R_{cover} $ of rectangles that are $(k-\omega)$ covered. To find a $(k-\omega)$ coverage barrier, we need to find a continuous area formed from rectangles in $R_{cover}$ that connects the left side to the right side of $\Omega$. The method is to transform the rectangles set into a graph. Each vertex in the graph corresponds to a rectangle in $ R_{cover} $. Two vertices are considered adjacent if the corresponding rectangles share at least one point. Two virtual vertices are added to the graph, source vertex $ s $ and sink vertex $ t $. All vertices corresponding to the rectangles lying on the left side of $\Omega$ are adjacent to $s$ and all vertices corresponding to the rectangles lying on the right side of $\Omega$ are adjacent to $t$. After the graph is constructed, we use Breath First Search algorithm to find a path from $s$ to $t$. If a path is found, we conclude that there exists a $(k-\omega)$ barrier in the monitoring region. Otherwise, the barrier does not exist.

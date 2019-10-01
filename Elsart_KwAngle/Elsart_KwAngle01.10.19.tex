@@ -1,0 +1,147 @@
+\documentclass[3p]{elsarticle}
+
+\usepackage{tgpagella}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=black,
+}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage[linesnumbered, ruled, longend]{algorithm2e}
+\usepackage{amsmath, amssymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{10pt}
+\setlength{\parskip}{6pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thr}{Theorem}
+\newdefinition{df}{Definition}
+\newproof{pf}{Proof}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color}
+\definecolor{light-gray}{gray}{0.95}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{scalerel}
+\DeclareMathOperator*{\uint}{\scalerel*{\rotatebox{8}{$\!\scriptstyle\int\!$}}{\int}}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%\title{An efficient approximate algorithm for achieving $(k-\omega)$ angle barrier coverage in camera wireless sensor networks}
+\title{An efficient method to verify and assess ($k-\omega$) coverage in wireless multimedia sensor networks}
+
+%% Group authors per affiliation:
+\author[1]{Nguyen Thi My Binh}
+\ead{binhntm@haui.edu.vn}
+\author[2]{Chu Minh Thang}
+\ead{mthang129@gmail.com}
+\author[3]{Huynh Thi Thanh Binh}
+\ead{binhhtt@soict.hust.edu.vn}
+
+\begin{abstract}
+Barrier coverage problems in camera sensor networks have drawn the attention by academic community because of their huge potential applications. Various versions of barrier coverage under wireless camera sensor networks have been studied such as minimal exposure path, strong/weak barrier, 1/k barrier, full view barrier problems. In this paper, based on new $(k-\omega)$ angle coverage model, we study how to achieve $(k-\omega)$ angle barrier coverage problem under uniform random deployment scheme (hereinafter $A(k-\omega)ABC$ problem). This problem aims to juggle whether any given camera sensor networks is $(k-\omega)$ angle barrier coverage. A camera sensor network is called $(k-\omega)$ angle barrier coverage if any crossing path is $(k-\omega)$ angle coverage. The $A(k-\omega)ABC$ problem is useful because it can make balance of the number of camera sensors used and the information retrieved by the camera sensors. Furthermore, this problem is vital for design and applications for camera sensor networks when camera sensor nodes were deployed randomly. Thus, we formulate the $A(k-\omega)ABC$ problem and then proposed an efficient method for solving this problem. An extensive experiments were conducted on random instances, and the results indicated that the proposed algorithm can produce high quality and stable solutions, as well as achieve better results than full-view coverage model.
+\end{abstract}
+
+\begin{keyword}
+minimal exposure path\sep wireless sensor networks\sep stationary sensor networks\sep mobile sensor networks
+\end{keyword}
+
+\end{frontmatter}
+
+%\linenumbers
+
+\section{Introduction}
+\label{sec:intro}
+Barrier coverage in WSNs is a critical issue for various sensor network security applications, e.g., boundary surveillance (national border, critical resource protection) and intrusion detection. Barrier coverage is formed by a sensing barrier for detecting intruders crossing a region of interest. Compared with full coverage, barrier coverage requires much less quantity of sensors and energy. Thus, barrier coverage is considered more scalable and attractive in large-scale deployment in reality.\par
+Recently, camera sensor networks have drawn the attention of research community [1-6]. Compared with conventional scalar sensors, camera sensors can harvest much richer information of the environment in the forms of images or videos and thus promise an extremely potential in applications. However, cost of camera sensors is higher than scalar sensor. Camera sensors are randomly scattered for achieving barrier coverage in a large scale is a very challenged. Thus, security surveillance or intrusion detection application is expected to build up a cost efficient camera sensor barrier such that every intruder image can be detected effectively. However, the camera sensors barrier coverage problem is much different and more complicated than the conventional barrier coverage problem. When sensing range of a chain of camera sensors across the surveillance region is simply combining, that does not provide effective barrier coverage. Because an intruder may cross the barrier without being recognized, i.e., its face image could not be caught. The fundamental difference between camera and traditional scalar sensors in coverage is that camera sensors may capture very different scenes of the same object if they are from different viewpoints. For instance, when a camera is placed behind the intruder, no face image can be recognized. Researches in the computer vision field show that the object is more likely to be recognized by the recognition system if the image is captured at or near the frontal viewpoint \cite{blanz2005face}, i.e., if the object is facing straight to the camera. As the angle between the object facing direction and the camera viewing direction (defined by the vector from the object to the camera, Figure 1(a)) increases, the detection rate decreases dramatically. Therefore, to keep a high level monitor quality, a good camera sensor barrier should ensure that no matter where the traversing object faces, there is always some camera to effectively capture its face image.\par
+%
+To get more information of the intruders, especially their face identifications, full-view coverage model was first introduced in Wang and Cao [8, 9]. An object is full-view covered if there is always at least one camera covering it no matter which object facing direction and the cameras viewing direction is sufficiently close to the object facing direction. Obviously, we can obtain more information about the intruder in full-view model. In \cite{wu2012achieving}, the authors investigate the necessary and sufficient conditions to achieve full view coverage under uniform deployment and Poisson deployment. \par
+%
+Ma et al. \cite{ma2012minimum} studied the minimum camera barrier coverage problem in WCSNs when the camera sensors are deployed randomly in a monitor field. The authors have some extension, the algorithm reduces the number of camera sensors, but it still requires a lot of camera sensors to construct a full viewed barrier coverage. In \cite{xu2016minimum}, Xu et. al. also want to maintain the quality of aggregate information with the least camera sensors. Basing on $(k-\omega)$ angle coverage model \cite{tseng2012k}, they produce a new barrier coverage model named by $(k, \omega)$-angle barrier coverage. The object is said $(k-\omega)$ angle coverage when it is simultaneously monitored by at least k sensors, and to ensure that k different sensors monitor different parts of the object, the angle between two arbitrary sensor directions must be equal or greater. The monitored field exists a $(k-\omega)$ angle barrier coverage if it has a connected region across the monitor field such that every point within the region is $(k-\omega)$ angle coverage. The $(k-\omega)$ angle barrier coverage is useful because of a balance of the number of camera sensors used and the information retrieved by the camera sensors.\par
+%
+However, a fundamental problem of assessing the quality of a $(k-\omega)$ angle barrier has not been addressed efficiently. Currently, in the tradition model of attenuation, when evaluating the coverage quality of a sensor toward a certain point, the coverage value formula is defined to be affected only by the distance from the sensor to the considered point, which may lead to several exceptional inconsistency regarding evaluate the quality of coverage, especially in the problem of $(k-\omega)$ barrier in the sensor network. Firstly, the model can only illustrate the general coverage of a point to a certain sensor. As a result, it is impossible to achieve a metric measuring the amount of information on every direction of an intruder captured by the network of sensors, which is fundamental in several coverage problems such as the $k-\omega$ cover or the full view cover problem. Secondly, this model shows little consistency considering the coverage of a point in a sensor network. In case of evaluating the coverage of a point exposed to numerous sensors, there have been 2 common models, the All-Sensor Field Intensity and the Closest-Sensor Field Intensity model. While the latter failed to illustrate the cooperation of the sensors in sensing the same object, which greatly underrate the real coverage of the network on the intruder, the former model does not take into account the repetition of information captured by numerous sensors, thus exaggerate the value of coverage dramatically.\par
+%
+As a result, we found it necessary to devise a more preferable attenuated model assessing the coverage quality of the sensor network toward a point in the field of interest, the model can later be generalised to evaluate the coverage of the sensor network on a line or a closed region. To formulate the coverage value regarding information from every direction of the intruder, it is necessary to consider its shape. In this article, the problem is tackled generally, which results in we using the rule of symmetric to make an assumption that the intruder is a circle. This geometrical shape is sufficient since the coverage is considered in the 2-D plane only, and the circle itself has parts of the circumference followed every possible direction, which help illustrate the devised model more thoroughly and clearly.\par
+%
+The coverage model implements the idea of Divide-And-Conquer. The intruder is differentiated into several small parts. Each of them is then evaluated separately, then added together to obtain the total coverage of the sensor network on the intruder at the considered position. Each small part of the circle, in turn, is calculated with each sensor that cover it, then the largest coverage value is taken. This operation will prevent the coverage overrated from several sensors having similar position toward the considered point, which in real life will serve no purpose of obtaining more information of the specific part on the intruder.\par
+%
+In this paper, we focus on evaluating a sensing field based on two factors: the probability of successfully forming a $(k-\omega)$ angle barrier, and the average quality of the found barriers in the sensing fields. This problem is vital for optimizing the efficiency of sensor placement in sensor networks when camera sensor nodes were deployed randomly. For instance, camera sensors have to be scattered by plane or artillery if the region of interest is hostile or inaccessible or deficiency on time, manpower or funds prevents careful arrangement of every single sensor.\par
+%
+The main contributions of this article are as follows. 
+\begin{itemize}
+	\item Formulate achieving ($k-\omega$) angle barrier coverage problem.
+	\item Propose an efficient method to deterministically verify if a monitored field can be achieved a ($k-\omega$) angle barrier coverage in by any given set of camera sensors. 
+	\item Evaluate the found barriers with the devised metric.
+	\item Conduce experiments in various scenarios to examine the result and the computation time of the proposed algorithm.
+	\item Analyze and estimate the parameters effect on performance of proposed algorithm.
+\end{itemize}
+%
+The rest of the paper is organized as follow. Related works are presented in section 2. Section 3 formulates A ($k-\omega$) angle barrier problem. Section 4 introduces proposed algorithm. Section 5 gives our experiments along with computational and comparative results as well as conclusion in section 6.
+%
+
+\section{Related works}
+\input{related_works}
+
+\section{Preliminaries and problem formulation}
+\subsection{Preliminaries}
+\input{theorem_version3}
+\input{preliminaries}
+\subsection{Problem formulation}
+\input{ProblemFormulation}
+
+\section{Proposed algorithm}
+\subsection{Verify the ($k-\omega$) barrier cover}
+\input{section1}
+
+\subsection{Evaluate the quality of a ($k-\omega$) barrier}
+\label{baCal}
+\input{section_2}
+
+\section{Experimental results}
+\input{ExperimentalResults}
+
+\section{Conclusion}
+%
+This paper addressed the minimal exposure path problem for attenuated sensing model with all mobile sensors. We first have considered and formulated a model of the minimal exposure path problem in all mobile sensor networks; we have proposed the genetic algorithm to solve this issue. In addition, extensive experimental simulations were conducted to validate and to evaluate the proposed model as well as algorithm. The results showed that: the proposed algorithm could be effectively applied to both static and mobile models of wireless sensor networks; the coverage of mobile sensor networks is almost better than the coverage of static sensor networks in case having the same number of sensors.
+
+%\bibliography{mybibfile}
+\bibliography{report}
+\bibliography{mybibfile}
+\end{document}
