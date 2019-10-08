@@ -1,5 +1,7 @@
 We provide some preliminaries used in the following sections of this paper.
-\subsubsection{Differentiation Coverage Model}
+\begin{df}
+	{\itshape Differentiation Field Intensity}
+\end{df}
 In the tradition model of attenuation, the algorithm evaluating the coverage from a sensor network toward a point may lead to several exceptional inconsistency, especially in the problem of $k-\omega$ barrier in the sensor network. As a result, in this article we are going to devise a more preferable attenuated model assessing the coverage quality of the sensor network toward a point in the field of interest, the model can later be generalised to evaluate the coverage of the sensor network on a line or a closed region.
 
 Consider a point lying in the sensing range of a certain omnidirectional  or directional sensor. Let us name the sensor $S_i$, the penetration object $P$ with radius $R$ and the considered part $P_\phi$ being positioned at $\phi$ and has length $dl$. Call the distance from $S_i$ to $P_\phi$ as $d_i$, the direction of the sensor compared to the pivot direction as $\phi_i$. Because $R$ is usually inconsiderable compared to $d_i$, we can approximately use $\phi_i$ and $d_i$ as constants with variable $\phi$, the model will be now illustrated as followed.
@@ -48,8 +50,8 @@ $$E(P) = \uint\limits_0^{2\pi}{\mathsf{max}\left\{0,\ \mathsf{min}\Big\{\frac{A}
 
 In conclusion, a new model of coverage is devised which may prove to be exceptionally effective in measuring the coverage efficiency of sensor networks in not only the tradition coverage problem but also in more complex ones such as the problem of $full\hspace{1mm}view$ or $k-\omega$ coverage. The new model is proposed with detailed and precise logical progress, successfully adapts the strong points of both the All-Sensor Field Intensity and the Closest-Sensor Field Intensity model, handling preferably the cooperation of multiple sensors in the network without overrating the repetition of captured information.
 
-\subsubsection{Coverage of a barrier}
-\label{barrier}
+%\subsubsection{Coverage of a barrier}	
+%\label{bar	rier}
 
 \begin{df}{\itshape($k-\omega$) barrier}\\
 	A ($k-\omega$) barrier $B$ is a connected region from the left side to the right side of the monitoring region and satisfies that $B$ is ($k-\omega$) covered.
