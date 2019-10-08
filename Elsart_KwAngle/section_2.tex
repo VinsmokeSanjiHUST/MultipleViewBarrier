@@ -2,13 +2,13 @@ The algorithm takes the nodes forming a barrier and the $k$-list of sensors asso
 
 The coverage of the barrier is calculated as the average of every node which forms that barrier with the weight assigned as the area of each node. With $B_i$ as the nodes forming the barrier $B$, we have
 
-$$E(B) = \iint_{B}E(P)dxdy.\frac{1}{S_B} =$$
+$$E(B) = \iint_{B}E(P)dxdy.\frac{1}{S_B}$$
 
-$$(\sum_i(\iint_{B_i}E(P)dxdy)).\frac{1}{S_B} =$$
+$$= (\sum_i(\iint_{B_i}E(P)dxdy)).\frac{1}{S_B}$$
 
-$$(\sum_iE(B_i).S_{B_i}).\frac{1}{S_B} =$$
+$$=(\sum_iE(B_i).S_{B_i}).\frac{1}{S_B} $$
 
-$$(\sum_iE(B_i).S_{B_i}).\frac{1}{\sum_iS_{B_i}}$$
+$$=(\sum_iE(B_i).S_{B_i}).\frac{1}{\sum_iS_{B_i}}$$
 
 As a result, this calculation method is consistent with our definition of coverage on the barrier in the \ref{barrier} section, hence may provide preferable assessment on each setting of parameters.
 
