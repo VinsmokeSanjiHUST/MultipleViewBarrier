@@ -1,3 +1,5 @@
+To assess quality of coverage of achieve sensor barrier, the coverage model implements the idea of Divide-And-Conquer. The object is differentiated into several small parts. Each of them is then evaluated separately, then added together to obtain the total coverage of the sensor network on the intruder at the considered position. Each small part of the circle, in turn, is calculated with each sensor that cover it, then the largest coverage value is taken. This operation will prevent the coverage overrated from several sensors having similar position toward the considered point, which in real life will serve no purpose of obtaining more information of the specific part on the intruder. 
+
 The algorithm takes the nodes forming a barrier and the $k$-list of sensors associating with each node as the input and compute the coverage on the input barrier.
 
 The coverage of the barrier is calculated as the average of every node which forms that barrier with the weight assigned as the area of each node. With $B_i$ as the nodes forming the barrier $B$, we have
