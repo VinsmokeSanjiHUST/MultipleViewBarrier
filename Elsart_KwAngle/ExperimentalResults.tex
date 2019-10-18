@@ -11,7 +11,7 @@ All the experiments are performed on a personal computer with core Intel Core i7
 
 Parameter settings
 
-The sensing fields in all experiments are presented as rectangles with the size of 200m x 50m. Sensor nodes are deployed uniformly randomly in a rectangle with each side extended compared to the sides of the sensing field a distance equal to the sensing radius of each sensor in order to guarantee the uniform distribution regarding sensing area inside the sensing field. Each set of parameters contains several independent random topologies to conduct the algorithm on and measure the target indexes. Altogether there are 21000 experiments on 210 instances of parameters which were analyzed with our algorithm. The details are as follows:
+The sensing fields in all experiments are presented as rectangles with the size of 200m x 50m. Sensor nodes are deployed uniformly randomly in a rectangle with each side extended compared to the sides of the sensing field a distance equal to the sensing radius of each sensor in order to guarantee the uniform distribution regarding sensing area inside the sensing field. Each set of parameters contains several independent random topologies to conduct the algorithm on and measure the target indexes. Furthermore, each instance of experiment is conducted with both node handling methods. Altogether there are 42000 experiments on 210 instances of parameters which were analyzed with our algorithm. The details are as follows:
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{l | r}
@@ -21,7 +21,9 @@ The sensing fields in all experiments are presented as rectangles with the size 
 		Minimum sensing radius & 5 \\
 		Sensing angle & 90 \\
 		k & 3, 4, 5, 6 \\
-		The number of topologies for each instance & 100
+		The number of topologies for each instance & 100 \\
+		Node handling method & Max, Random
+		
 	\end{tabular}
 	\caption{General parameters}
 \end{table}
@@ -36,6 +38,8 @@ The sensing fields in all experiments are presented as rectangles with the size 
 \end{table}
 
 \subsection{Computation results}
+
+Obviously, the max method will offer a greater coverage value, while sacrifice some speed to choose the appropriate list in each situation, this result will be illustrated clearly in the all of the following figures in this section.
 
 \subsubsection{Effect of $\omega$ on algorithm performance}
 
@@ -57,7 +61,7 @@ On the other hand, a lower value of $\omega$ results in a larger searching space
 		\includegraphics[scale=.8]{Hinhanh/OmegaEffect/coverage/k3.pdf}		
 		\caption{k = 4}
 	\end{subfigure}
-\caption{}
+\caption{Effect of $\omega$ on the average coverage value of the found barrier with $k = 3$ and $k = 4$}
 \label{fig:}
 \end{figure}
 %
@@ -72,7 +76,7 @@ On the other hand, a lower value of $\omega$ results in a larger searching space
 		\includegraphics[scale=.8]{Hinhanh/OmegaEffect/time/k4.pdf}		
 		\caption{k = 4}
 	\end{subfigure}
-\caption{}
+\caption{Effect of $\omega$ on the average computational time in $ms$ of the algorithm with $k = 3$ and $k = 4$}
 \label{fig:}
 \end{figure}
 %
@@ -87,7 +91,7 @@ On the other hand, a lower value of $\omega$ results in a larger searching space
 		\includegraphics[scale=.8]{Hinhanh/OmegaEffect/probability/k3.pdf}		
 		\caption{k = 4}
 	\end{subfigure}
-\caption{}
+\caption{Effect of $\omega$ on the probability of existence of multiple view barrier with $k = 3$ and $k = 4$}
 \label{fig:}
 \end{figure}
 
@@ -106,7 +110,7 @@ Like the effect of $\omega$, a larger value of sensor number would lead to a lar
 		\includegraphics[scale=.8]{Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf}
 		\caption{k = 4, $\omega$ = 65}
 	\end{subfigure}
-\caption{}
+\caption{Effect of sensor number on the average coverage value of the found barrier with some typical values of $k$ and $\omega$}
 \label{fig:}
 \end{figure}
 %
@@ -121,7 +125,7 @@ Like the effect of $\omega$, a larger value of sensor number would lead to a lar
 		\includegraphics[scale=.8]{Hinhanh/SensorNumberEffect/time/k4omega65.pdf}
 		\caption{k = 4, $\omega$ = 65}
 	\end{subfigure}
-\caption{}
+\caption{Effect of sensor number on the average computational time in $ms$ of the algorithm with some typical values of $k$ and $\omega$}
 \label{fig:}
 \end{figure}
 %
@@ -136,7 +140,7 @@ Like the effect of $\omega$, a larger value of sensor number would lead to a lar
 		\includegraphics[scale=.8]{Hinhanh/SensorNumberEffect/probability/k4omega65.pdf}
 		\caption{k = 4, $\omega$ = 65}
 	\end{subfigure}
-\caption{}
+\caption{Effect of sensor number on the probability of existence of multiple view barrier with some typical values of $k$ and $\omega$}
 \label{fig:}
 \end{figure}
 
@@ -150,12 +154,12 @@ Regarding this metric, in general, as there are more sensors that cover a certai
 
 Finally, the effect of $k$ on computation time is. This is because that the large value of $k$ would leads to a larger nest in traversing for all the $k-\omega$ sets and larger loop when checking the exposure of nodes, hence the computation time for finding all the sets that $k-\omega$ cover each node and determining the sets of sensor with largest exposure is increased considerably.
 
-In conclusion, there may exist a value of $k$ such that its critical exposure approaches the upper bound while the computation time has not been exceptional.
+In conclusion, there may exist a value of $k$ such that its critical coverage approaches the upper bound while the computation time has not been exceptional.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=1.]{Hinhanh/kEffect/main.pdf}
-	\caption{}
+	\caption{Effect of $k$ on the critical coverage value of the $(k-\omega)$ barrier}
 	\label{fig:}
 \end{figure}
 

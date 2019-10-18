@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.31)  15 OCT 2019 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.31)  16 OCT 2019 17:23
 entering extended mode
 **./Elsart_KwAngle08.10.19.tex
 (Elsart_KwAngle08.10.19.tex
@@ -575,12 +575,12 @@ LaTeX Info: Redefining \nameref on input line 64.
 \@outlinefile=\write4
 \openout4 = `Elsart_KwAngle08.10.19.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 87.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 87.
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -595,48 +595,41 @@ Overfull \hbox (1.67pt too wide) has occurred while \output is active
 [] 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\omega' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 99.
-
 [1
 
 {C:/Users/DELL/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 110.
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 109.
 
-LaTeX Font Info:    No file OMSqpl.fd. on input line 110.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 109.
 
 
 LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 110.
+(Font)              for symbol `textbullet' on input line 109.
 
 [2] (related_works.tex
-<wrongDijstra.pdf, id=125, 441.54361pt x 193.90543pt>
+<wrongDijstra.pdf, id=133, 441.54361pt x 193.90543pt>
 File: wrongDijstra.pdf Graphic file (type pdf)
 <use wrongDijstra.pdf>
-Package pdftex.def Info: wrongDijstra.pdf  used on input line 13.
+Package pdftex.def Info: wrongDijstra.pdf  used on input line 12.
 (pdftex.def)             Requested size: 264.9282pt x 116.34415pt.
-<komega.pdf, id=128, 293.11307pt x 288.23483pt>
+<komega.pdf, id=136, 293.11307pt x 288.23483pt>
 File: komega.pdf Graphic file (type pdf)
 <use komega.pdf>
-Package pdftex.def Info: komega.pdf  used on input line 21.
+Package pdftex.def Info: komega.pdf  used on input line 20.
 (pdftex.def)             Requested size: 175.86919pt x 172.94221pt.
- [3]) (theorem_version3.tex [4] [5 <./wrongDijstra.pdf> <./komega.pdf>]
-<innersafe.pdf, id=205, 233.58267pt x 201.1485pt>
+ [3]) (theorem_version3.tex
+<innersafe.pdf, id=169, 233.58267pt x 201.1485pt>
 File: innersafe.pdf Graphic file (type pdf)
 <use innersafe.pdf>
 Package pdftex.def Info: innersafe.pdf  used on input line 24.
 (pdftex.def)             Requested size: 140.15068pt x 120.69002pt.
-<hinhminhhoa.png, id=206, 483.0045pt x 230.3004pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5 <./wrongDijstra.pdf> <./komega.pdf>]
+<hinhminhhoa.png, id=220, 483.0045pt x 230.3004pt>
 File: hinhminhhoa.png Graphic file (type png)
 <use hinhminhhoa.png>
 Package pdftex.def Info: hinhminhhoa.png  used on input line 51.
@@ -651,27 +644,23 @@ Overfull \hbox (200.70003pt too wide) in paragraph at lines 51--52
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <./innersafe.pdf>]
-<groupSensor_Version2.pdf, id=227, 235.87323pt x 237.35175pt>
+<groupSensor_Version2.pdf, id=239, 235.87323pt x 237.35175pt>
 File: groupSensor_Version2.pdf Graphic file (type pdf)
 <use groupSensor_Version2.pdf>
 Package pdftex.def Info: groupSensor_Version2.pdf  used on input line 12.
 (pdftex.def)             Requested size: 176.90448pt x 178.01335pt.
-<exposure.pdf, id=228, 341.6223pt x 341.97562pt>
+<exposure.pdf, id=240, 341.6223pt x 341.97562pt>
 File: exposure.pdf Graphic file (type pdf)
 <use exposure.pdf>
 Package pdftex.def Info: exposure.pdf  used on input line 16.
 (pdftex.def)             Requested size: 204.97496pt x 205.18694pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./hinhminhhoa.png>]
+ [7 <./hinhminhhoa.png> <./groupSensor_Version2.pdf> <./exposure.pdf>]
 Overfull \hbox (15.93369pt too wide) in paragraph at lines 47--48
 []\OT1/qpl/m/n/10 In short, the cov-er-age on a part of a cer-tain set of sen-s
 ors is cal-cu-lated from the largest value of $[]\OML/cmm/m/it/10 d$
  []
 
-[8 <./groupSensor_Version2.pdf> <./exposure.pdf>]) (ProblemFormulation.tex
+[8]) (ProblemFormulation.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -687,7 +676,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Reference `sensor' on page 9 undefined on input line 7.
 
-[9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
@@ -700,18 +688,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
-)
+[9])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\omega' on input line 131.
+(hyperref)                removing `math shift' on input line 130.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 131.
+(hyperref)                removing `\omega' on input line 130.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 130.
 
 (section1.tex
 
@@ -727,7 +715,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
 [10]
-<setSensors_1.pdf, id=300, 315.8771pt x 290.85262pt>
+<setSensors_1.pdf, id=311, 315.8771pt x 290.85262pt>
 File: setSensors_1.pdf Graphic file (type pdf)
 <use setSensors_1.pdf>
 Package pdftex.def Info: setSensors_1.pdf  used on input line 19.
@@ -737,7 +725,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
-<setSensors_2.pdf, id=301, 315.8771pt x 290.85262pt>
+<setSensors_2.pdf, id=312, 315.8771pt x 290.85262pt>
 File: setSensors_2.pdf Graphic file (type pdf)
 <use setSensors_2.pdf>
 Package pdftex.def Info: setSensors_2.pdf  used on input line 23.
@@ -747,7 +735,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 23--24
 [][] 
  []
 
-<setSensors_3.pdf, id=302, 316.27762pt x 290.85262pt>
+<setSensors_3.pdf, id=313, 316.27762pt x 290.85262pt>
 File: setSensors_3.pdf Graphic file (type pdf)
 <use setSensors_3.pdf>
 Package pdftex.def Info: setSensors_3.pdf  used on input line 27.
@@ -757,7 +745,7 @@ Overfull \hbox (17.73698pt too wide) in paragraph at lines 27--28
 [][] 
  []
 
-<setSensors_4.pdf, id=303, 315.8771pt x 290.85262pt>
+<setSensors_4.pdf, id=314, 315.8771pt x 290.85262pt>
 File: setSensors_4.pdf Graphic file (type pdf)
 <use setSensors_4.pdf>
 Package pdftex.def Info: setSensors_4.pdf  used on input line 31.
@@ -767,7 +755,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 31--32
 [][] 
  []
 
-<setSensors_5.pdf, id=304, 315.8771pt x 291.25212pt>
+<setSensors_5.pdf, id=315, 315.8771pt x 291.25212pt>
 File: setSensors_5.pdf Graphic file (type pdf)
 <use setSensors_5.pdf>
 Package pdftex.def Info: setSensors_5.pdf  used on input line 35.
@@ -777,7 +765,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
-<setSensors_6.pdf, id=305, 315.8771pt x 291.25212pt>
+<setSensors_6.pdf, id=316, 315.8771pt x 291.25212pt>
 File: setSensors_6.pdf Graphic file (type pdf)
 <use setSensors_6.pdf>
 Package pdftex.def Info: setSensors_6.pdf  used on input line 39.
@@ -815,7 +803,7 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 158.
 
-<Dynamic_Partition.pdf, id=361, 273.68446pt x 249.79422pt>
+<Dynamic_Partition.pdf, id=374, 273.68446pt x 249.79422pt>
 File: Dynamic_Partition.pdf Graphic file (type pdf)
 <use Dynamic_Partition.pdf>
 Package pdftex.def Info: Dynamic_Partition.pdf  used on input line 173.
@@ -828,15 +816,15 @@ Overfull \hbox (15.0pt too wide) detected at line 229
 [13 <./Dynamic_Partition.pdf>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\omega' on input line 134.
+(hyperref)                removing `\omega' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 133.
 
 (section_2.tex [14]
 
@@ -849,142 +837,142 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 40.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\omega' on input line 40.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 40.
-
 [15]
-<Hinhanh/OmegaEffect/coverage/k4.pdf, id=428, 253.5874pt x 210.2545pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\omega' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 44.
+
+<Hinhanh/OmegaEffect/coverage/k4.pdf, id=439, 253.5874pt x 210.2545pt>
 File: Hinhanh/OmegaEffect/coverage/k4.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/coverage/k4.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/coverage/k4.pdf  used on input lin
-e 51.
+e 55.
 (pdftex.def)             Requested size: 202.8702pt x 168.20381pt.
-<Hinhanh/OmegaEffect/coverage/k3.pdf, id=429, 253.5874pt x 210.26154pt>
+<Hinhanh/OmegaEffect/coverage/k3.pdf, id=440, 253.5874pt x 210.26154pt>
 File: Hinhanh/OmegaEffect/coverage/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/coverage/k3.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/coverage/k3.pdf  used on input lin
-e 57.
+e 61.
 (pdftex.def)             Requested size: 202.8702pt x 168.20944pt.
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 49--60
+Overfull \hbox (1.67pt too wide) in paragraph at lines 53--64
 [][] [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Hinhanh/OmegaEffect/time/k3.pdf, id=430, 268.56537pt x 210.2515pt>
+<Hinhanh/OmegaEffect/time/k3.pdf, id=441, 268.56537pt x 210.2515pt>
 File: Hinhanh/OmegaEffect/time/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/time/k3.pdf>
-Package pdftex.def Info: Hinhanh/OmegaEffect/time/k3.pdf  used on input line 67
+Package pdftex.def Info: Hinhanh/OmegaEffect/time/k3.pdf  used on input line 71
 .
 (pdftex.def)             Requested size: 214.85257pt x 168.20142pt.
-<Hinhanh/OmegaEffect/time/k4.pdf, id=431, 268.56537pt x 210.2545pt>
+<Hinhanh/OmegaEffect/time/k4.pdf, id=442, 268.56537pt x 210.2545pt>
 File: Hinhanh/OmegaEffect/time/k4.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/time/k4.pdf>
-Package pdftex.def Info: Hinhanh/OmegaEffect/time/k4.pdf  used on input line 72
+Package pdftex.def Info: Hinhanh/OmegaEffect/time/k4.pdf  used on input line 76
 .
 (pdftex.def)             Requested size: 214.85257pt x 168.20381pt.
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 65--75
+Overfull \hbox (1.67pt too wide) in paragraph at lines 69--79
 [][] [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Hinhanh/OmegaEffect/probability/k3.pdf, id=432, 271.53845pt x 208.68565pt>
+<Hinhanh/OmegaEffect/probability/k3.pdf, id=443, 271.53845pt x 208.68565pt>
 File: Hinhanh/OmegaEffect/probability/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/probability/k3.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/probability/k3.pdf  used on input 
-line 82.
+line 86.
 (pdftex.def)             Requested size: 217.23105pt x 166.94873pt.
 File: Hinhanh/OmegaEffect/probability/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/probability/k3.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/probability/k3.pdf  used on input 
-line 87.
+line 91.
 (pdftex.def)             Requested size: 217.23105pt x 166.94873pt.
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 80--90
+Overfull \hbox (1.67pt too wide) in paragraph at lines 84--94
 [][] [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf, id=433, 253.5874pt x 212.5
+<Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf, id=444, 253.5874pt x 212.5
 6013pt>
 File: Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf Graphic file (type pdf
 )
 <use Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf>
 Package pdftex.def Info: Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf  us
-ed on input line 101.
+ed on input line 105.
 (pdftex.def)             Requested size: 202.8702pt x 170.04832pt.
-<Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf, id=434, 253.5874pt x 218.55
+<Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf, id=445, 253.5874pt x 218.55
 351pt>
 File: Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf Graphic file (type pdf)
 
 <use Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf>
 Package pdftex.def Info: Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf  use
-d on input line 106.
+d on input line 110.
 (pdftex.def)             Requested size: 202.8702pt x 174.84303pt.
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 99--109
+Overfull \hbox (1.67pt too wide) in paragraph at lines 103--113
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Hinhanh/SensorNumberEffect/time/k3omega105.pdf, id=435, 259.54265pt x 212.3152
+<Hinhanh/SensorNumberEffect/time/k3omega105.pdf, id=446, 259.54265pt x 212.3152
 2pt>
 File: Hinhanh/SensorNumberEffect/time/k3omega105.pdf Graphic file (type pdf)
 <use Hinhanh/SensorNumberEffect/time/k3omega105.pdf>
 Package pdftex.def Info: Hinhanh/SensorNumberEffect/time/k3omega105.pdf  used o
-n input line 116.
+n input line 120.
 (pdftex.def)             Requested size: 207.63438pt x 169.85239pt.
-<Hinhanh/SensorNumberEffect/time/k4omega65.pdf, id=436, 268.56938pt x 212.31923
+<Hinhanh/SensorNumberEffect/time/k4omega65.pdf, id=447, 268.56938pt x 212.31923
 pt>
 File: Hinhanh/SensorNumberEffect/time/k4omega65.pdf Graphic file (type pdf)
 <use Hinhanh/SensorNumberEffect/time/k4omega65.pdf>
 Package pdftex.def Info: Hinhanh/SensorNumberEffect/time/k4omega65.pdf  used on
- input line 121.
+ input line 125.
 (pdftex.def)             Requested size: 214.85577pt x 169.85559pt.
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 114--124
+Overfull \hbox (1.67pt too wide) in paragraph at lines 118--128
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Hinhanh/SensorNumberEffect/probability/k3omega105.pdf, id=437, 271.5425pt x 21
+<Hinhanh/SensorNumberEffect/probability/k3omega105.pdf, id=448, 271.5425pt x 21
 2.32123pt>
 File: Hinhanh/SensorNumberEffect/probability/k3omega105.pdf Graphic file (type 
 pdf)
 <use Hinhanh/SensorNumberEffect/probability/k3omega105.pdf>
 Package pdftex.def Info: Hinhanh/SensorNumberEffect/probability/k3omega105.pdf 
- used on input line 131.
+ used on input line 135.
 (pdftex.def)             Requested size: 217.23428pt x 169.8572pt.
-<Hinhanh/SensorNumberEffect/probability/k4omega65.pdf, id=438, 271.5425pt x 212
+<Hinhanh/SensorNumberEffect/probability/k4omega65.pdf, id=449, 271.5425pt x 212
 .32726pt>
 File: Hinhanh/SensorNumberEffect/probability/k4omega65.pdf Graphic file (type p
 df)
 <use Hinhanh/SensorNumberEffect/probability/k4omega65.pdf>
 Package pdftex.def Info: Hinhanh/SensorNumberEffect/probability/k4omega65.pdf  
-used on input line 136.
+used on input line 140.
 (pdftex.def)             Requested size: 217.23428pt x 169.86201pt.
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 129--139
+Overfull \hbox (1.67pt too wide) in paragraph at lines 133--143
 []$[]$ $[]$ 
  []
 
@@ -993,19 +981,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 143.
+(hyperref)                removing `math shift' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 143.
+(hyperref)                removing `math shift' on input line 147.
 
 [16] [17 <./Hinhanh/OmegaEffect/coverage/k4.pdf> <./Hinhanh/OmegaEffect/coverag
 e/k3.pdf> <./Hinhanh/OmegaEffect/time/k3.pdf> <./Hinhanh/OmegaEffect/time/k4.pd
 f>]
-<Hinhanh/kEffect/main.pdf, id=507, 251.29985pt x 208.99681pt>
+<Hinhanh/kEffect/main.pdf, id=518, 251.29985pt x 208.99681pt>
 File: Hinhanh/kEffect/main.pdf Graphic file (type pdf)
 <use Hinhanh/kEffect/main.pdf>
-Package pdftex.def Info: Hinhanh/kEffect/main.pdf  used on input line 157.
+Package pdftex.def Info: Hinhanh/kEffect/main.pdf  used on input line 161.
 (pdftex.def)             Requested size: 251.29922pt x 208.99629pt.
 
 
@@ -1016,9 +1004,9 @@ coverage/k3omega105.pdf> <./Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf>]
 (Elsart_KwAngle08.10.19.bbl [19 <./Hinhanh/SensorNumberEffect/time/k3omega105.p
 df> <./Hinhanh/SensorNumberEffect/time/k4omega65.pdf> <./Hinhanh/SensorNumberEf
 fect/probability/k3omega105.pdf> <./Hinhanh/SensorNumberEffect/probability/k4om
-ega65.pdf>])
+ega65.pdf>] [20 <./Hinhanh/kEffect/main.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
- [20 <./Hinhanh/kEffect/main.pdf>]
+ [21]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (Elsart_KwAngle08.10.19.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
@@ -1039,11 +1027,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 10669 strings out of 492895
- 159293 string characters out of 3133482
- 284557 words of memory out of 3000000
- 14246 multiletter control sequences out of 15000+200000
- 50526 words of font info for 64 fonts, out of 3000000 for 9000
+ 10687 strings out of 492895
+ 159781 string characters out of 3133482
+ 284764 words of memory out of 3000000
+ 14259 multiletter control sequences out of 15000+200000
+ 48981 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,38n,40p,1834b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}{C:/Program
@@ -1069,9 +1057,9 @@ onts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/tex-gyre/qplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/tex-gyre/qplr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qp
 lri.pfb>
-Output written on Elsart_KwAngle08.10.19.pdf (20 pages, 1216887 bytes).
+Output written on Elsart_KwAngle08.10.19.pdf (21 pages, 1221479 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 138 named destinations out of 1000 (max. 500000)
+ 727 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -13,10 +13,45 @@ Y.~Wang, G.~{Cao.}, Achieving full-view coverage in camera sensor networks, ACM
 Y.~C. Tseng, P.~Y. Chen, W.~T. {Chen.}, $ k $-angle object coverage problem in
   a wireless sensor network, IEEE Sensors Journal 12~(12) (2012) 3408--3416.
 
+\bibitem{sangwan2015survey}
+A.~Sangwan, R.~P. Singh, Survey on coverage problems in wireless sensor
+  networks, Wireless Personal Communications 80~(4) (2015) 1475--1500.
+
+\bibitem{ghosh2008coverage}
+A.~Ghosh, S.~K. Das, Coverage and connectivity issues in wireless sensor
+  networks: A survey, Pervasive and Mobile Computing 4~(3) (2008) 303--334.
+
 \bibitem{kumar2005barrier}
 S.Kumar, T.~H. Lai, A.~{Arora.}, Barrier coverage with wireless sensors,
   Proceedings of the 11th annual international conference on Mobile computing
   and networking (2005) 284--298.
+
+\bibitem{megerian2002exposure}
+S.~Megerian, F.~Koushanfar, G.~Qu, G.~Veltri, M.~{Potkonjak.}, Exposure in
+  wireless sensor networks: theory and practical solutionl, Wireless Networks
+  8~(5) (2002) 443--454.
+
+\bibitem{binh2016heuristic}
+H.~T.~T. Binh, N.~T.~M. Binh, N.~H. Hoang, P.~A. {Tu.}, Heuristic algorithm for
+  finding maximal breach path in wireless sensor network with omnidirectional
+  sensors, IEEE Region 10 Humanitarian Technology Conference (R10-HTC) (2016)
+  1--6.
+
+\bibitem{liu2013percolation}
+L.~Liu, X.~Zhang, H.~Ma, Percolation theory-based exposure-path prevention for
+  wireless sensor networks coverage in internet of things, IEEE Sensors Journal
+  13~(10) (2013) 3625--3636.
+
+\bibitem{binh2017genetic}
+N.~T.~M. Binh, C.~M. Thang, N.~D. Nghia, H.~T.~T. {Binh.}, Genetic algorithm
+  for solving minimal exposure path in mobile sensor networks, IEEE Symposium
+  Series on Computational Intelligence (SSCI) (2017) 1--8.
+
+\bibitem{binh2019efficient}
+H.~T.~T. Binh, N.~T.~M. Binh, N.~H. Ngoc, D.~T. H.Ly, N.~D. {Nghia.}, Efficient
+  approximation approaches to minimal exposure path problem in probabilistic
+  coverage model for wireless sensor networks, Applied Soft Computing 76 (2019)
+  726--743.
 
 \bibitem{liu2008strong}
 B.~Liu, O.~Dousse, J.~Wang, W.~{Saipulla.}, Strong barrier coverage of wireless
@@ -93,10 +128,5 @@ A.~Chen, T.~H. Lai, D.~{Xuan.}, Measuring and guaranteeing quality of
   barrier-coverage in wireless sensor networks, Proceedings of the 9th ACM
   international symposium on Mobile ad hoc networking and computing (2008)
   421--430.
-
-\bibitem{megerian2002exposure}
-S.~Megerian, F.~Koushanfar, G.~Qu, G.~Veltri, M.~{Potkonjak.}, Exposure in
-  wireless sensor networks: theory and practical solutionl, Wireless Networks
-  8~(5) (2002) 443--454.
 
 \end{thebibliography}

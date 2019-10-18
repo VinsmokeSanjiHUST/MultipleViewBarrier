@@ -7,10 +7,10 @@ Based on theorem 2, we can conclude that in order to verify the $(k-\omega)$ cov
 % 4 steps
 The idea of our algorithm can be described as follows:
 \begin{description}
-	\item[Step 1:] First, we find a set of sensors $G$ that cover four vertices of the rectangle $ ABCD $.
-	\item[Step 2:] Choose a list of $k$ sensors from $G$ satisfies that the point $A$ is $(k-\omega)$ covered by these $k$ sensors.
-	\item[Step 3:] If found any, check all of those lists and take the ones that also $(k-\omega)$ cover the 3 remaining vertices of the considered rectangle.
-	\item[Step 4:] Among all the list taken, return the one with the largest coverage value toward the considered rectangle.
+	\item[Step 1:] Firstly, find a set of sensors $G$ that cover four vertices of the rectangle $ ABCD $.
+	\item[Step 2:] Choose all lists of $k$ sensors from $G$ satisfies that the point $A$ is $(k-\omega)$ covered by these $k$ sensors.
+	\item[Step 3:] If found any, check all of those lists and take the ones that also $(k-\omega)$ cover the 3 remaining vertices $B$, $C$, $D$ of the considered rectangle. The step will offer all lists of sensors that $(k-\omega)$ cover the rectangle $ABCD$
+	\item[Step 4:] Finally, there are 2 possible approaches to choose a single list of sensors in the list of sensor lists found in step 3. These approaches will later be called node handling methods. The max method is choosing the list which offers the highest coverage toward the rectangle, while the random one will choose a random list which is expected to give the expectation of all list that $(k-\omega)$ cover the rectangle. In this paper, both approaches are considered and experimented on, detailed result can be found later in section \ref{sec:exp}
 \end{description}
 The key to implement this idea is at step 2. Our approach to this problem is very natural. First, sort $G$ in counter-clockwise order around $A$. Then, we consider each sensor in $G$ sequentially. If the sensor being considered satisfies some conditions, we put it into a list (call this list $L$). We do that until size of $L$ is equal to $k$. Then, $L$ is called a valid list. Figure \ref{finding} illustrates how to choose a valid list. In figure \ref{finding}, black vector denotes the sensor that is chosen to put into the list, while red vector denotes candidates to be chosen.
 
