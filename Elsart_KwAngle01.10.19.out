@@ -3,7 +3,7 @@
 \BOOKMARK [1][-]{section.3}{Preliminaries and problem formulation}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Preliminaries}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Problem formulation}{section.3}% 5
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Verify the \(k-\) barrier cover}{subsection.3.2}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Verify the \(k-\) barrier coverage}{subsection.3.2}% 6
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Evaluate the quality of a \(k-\) barrier}{subsection.3.2}% 7
 \BOOKMARK [1][-]{section.4}{Proposed algorithm}{}% 8
 \BOOKMARK [2][-]{subsection.4.1}{Verify the \(k-\) barrier cover}{section.4}% 9
@@ -12,11 +12,10 @@
 \BOOKMARK [2][-]{subsection.4.2}{Evaluate the quality of a \(k-\) barrier}{section.4}% 12
 \BOOKMARK [1][-]{section.5}{Experimental results}{}% 13
 \BOOKMARK [2][-]{subsection.5.1}{Simulation method}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.2}{System settings}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.3}{Parameter settings}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.4}{Computation results}{section.5}% 17
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Effect of \040on algorithm performance}{subsection.5.4}% 18
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Effect of sensor number on algorithm performance}{subsection.5.4}% 19
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Effect of k on algorithm performance}{subsection.5.4}% 20
-\BOOKMARK [3][-]{subsubsection.5.4.4}{Compare the devised metric with the traditional coverage models}{subsection.5.4}% 21
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 22
+\BOOKMARK [2][-]{subsection.5.2}{System setting and parameters setting}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Computation results}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Effect of \040on algorithm performance}{subsection.5.3}% 17
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Effect of sensor number on algorithm performance}{subsection.5.3}% 18
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Effect of k on algorithm performance}{subsection.5.3}% 19
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Compare the devised metric with the traditional coverage models}{subsection.5.3}% 20
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 21
