@@ -1,0 +1,20 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Elsart_KwAngle18.10.19.aux
+The style file: elsarticle-num.bst
+Database file #1: mybibfile.bib
+Repeated entry---line 85 of file mybibfile.bib
+ : @article{kumar2005barrier
+ :                          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 138 of file mybibfile.bib
+ :   
+ :   number="1",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 298 of file mybibfile.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty author in ai2006coverage
+Warning--empty year in ai2006coverage
+(There were 3 error messages)
