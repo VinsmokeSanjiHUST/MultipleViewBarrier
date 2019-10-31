@@ -2,15 +2,31 @@
 %{\bfseries Definition 1: } {\itshape$(k-\omega)$ coverage}
 %\subsubsection{($k-\omega$) region of a k-sensor list}
 \begin{df} 
-{\itshape$(k-\omega)$ coverage}
+{\itshape multiple-view coverage}
 \begin{itemize}
-	\item A point $P$ is said to be $(k-\omega)$ covered if there exists a list of $k$ sensors $L = \{S_1, S_2,...,S_k\}$ ordered in counter-clockwise order around $P$, such that $\omega < (\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) < \pi, \forall i \in \{1,2,...,k\}$.
-	\item A region $R$ is said to be $(k-\omega)$ covered if every point in $R$ is $(k-\omega)$ covered.
+	\item A point $P$ is multiple-view covered with $k$ sensors and angle constraint $\omega$ if there exists a list of $k$ sensors $L = \{S_1, S_2,...,S_k\}$ ordered in counter-clockwise order around $P$, such that $\omega < (\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) < \pi, \forall i \in \{1,2,...,k\}$ (consider $k + 1 \equiv 1$)
+	\item A region $R$ is said to be multiple-view covered if every point in $R$ is multiple-view covered.
 \end{itemize}
+Hereinafter, we use two concepts {\itshape multiple-view} coverage and {\itshape ($k,\omega$)} coverage equivalently. With a specific value of $k$ and $\omega$, we always use {\itshape ($k,\omega$)} instead of {\itshape multiple-view} (see figure \ref{fig:02})
 \end{df}
 \begin{df}
-{\itshape Inner safe region of a polygon's side.}\par
-Given a polygon {\sc pol}. Let $AB$ is a side of {\sc pol}. The way to determine the inner safe region is as follows:
+{\itshape Safe region}
+\begin{itemize}
+	\item Safe region was defined in \cite{tseng2012k}. Figure \ref{saferegion} illustrates the safe region of a line segment $S_1S_2$
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=.5]{Hinhanh/safe-region}
+		\caption{Safe region of line segment $S_1S_2$}
+		\label{saferegion}
+	\end{figure}
+\end{itemize}
+\end{df}
+%\begin{verbatim}
+%/* some explanation for safe region here */
+%\end{verbatim}
+\begin{df}
+{\itshape Inner safe region}\par
+Inner safe region is attached to a side of a polygon, not an arbitrary line segment. Given a polygon {\sc pol}. Let $AB$ is a side of {\sc pol}. The way to determine the inner safe region of $AB$ is as follows:
 %\vspace{-5pt}
 \begin{itemize}
 	\item Choose the midpoint $M$ of $AB$.
@@ -27,28 +43,27 @@ Figure ~\ref{innersafe} is an illustration of inner safe region of $S_1S_2$.
 	\end{center}
 \end{figure}
 \begin{df}
-{\itshape($k-\omega$) region of an $k$-sensor ordered list}\\
-Given a $k$-sensor ordered list $L = \{S_1,S_2,...,S_k\}$. ($k-\omega$) region of $L$ is the locus of points that are ($k-\omega$) covered by $L$.
+{\itshape($k,\omega$) region of an $k$-sensor list}\\
+Given a $k$-sensor list $L = \{S_1,S_2,...,S_k\}$. ($k,\omega$) region of $L$ is the locus of points that are ($k,\omega$) covered by $L$.
 \end{df}
 \begin{thr}
-{\itshape($k-\omega$) region of an $k$-sensor ordered list $L =\{S_1,S_2,...,S_k\}$ is the intersection of inner safe region of every line segment $S_iS_{i+1}$ and the sensing range of all sensors in $L$}.
+{\itshape($k,\omega$) region of an $k$-sensor list $L =\{S_1,S_2,...,S_k\}$ is the intersection of inner safe region of every line segment $S_iS_{i+1}$ and the sensing range of all sensors in $L$}.
 \end{thr}
 \begin{pf}
-	Let $R$ denote the ($k-\omega$) region of $L$. We only consider the case that $R$ is not empty. Suppose that $P$ is a point inside $R$, then $P$ is ($k-\omega$) covered by $L$. From definition 1, we have $(\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) > \omega$ (1) and $(\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) < \pi$ (2),\ $\forall i \in \{1,2,...,k\}$. Condition (1) means that $P$ is inside the safe region of $S_iS_{i+1}$. This safe region has 2 symmetrical parts splitted by line $S_iS_{i+1}$. Condition (2) forces $P$ to be located at only one special part which satisfies $(\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) < \pi$. And this part is always the inner safe region of $S_iS_{i+1}$. Hence, $P$ is inside the intersection of inner safe region of every line segment $S_iS_{i+1},\ i=\overline{1,k}$ and the sensing region of all sensors in $L$ (call this intersection $\mho$) (*).\par
-\indent On the other hand, if $P$ is inside $\mho$, $P$ satisfies the condition (1) and (2). Thus, $P$ is ($k-\omega$) covered by $L$, which deduce to $P$ is inside $R$ (**).\par
-\indent From (*) and (**), we have theorem 1 proved.
+	Let $\Sigma$ denote the ($k,\omega$) region of $L$. We only consider the case that $\Sigma$ is not empty. Suppose that $P$ is a point inside $\Sigma$, then $P$ is ($k,\omega$) covered by $L$. From definition 1, we have $(\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) > \omega$ (1) and $(\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) < \pi$ (2),\ $\forall i \in \{1,2,...,k\}$. Condition (1) means that $P$ is inside the safe region of $S_iS_{i+1}$. This safe region has 2 symmetrical parts splitted by line $S_iS_{i+1}$. Condition (2) forces $P$ to be located at only one special part which satisfies $(\overrightarrow{PS_i}, \overrightarrow{PS_{i+1}}) < \pi$. And this part is always the inner safe region of $S_iS_{i+1}$. Hence, $P$ is inside the intersection of inner safe region of every line segment $S_iS_{i+1},\ i=\overline{1,k}$ and the sensing region of all sensors in $L$ (call this intersection $\mho$) (*).\par
+\indent On the other hand, if $P$ is inside $\mho$, $P$ satisfies the condition (1) and (2). Thus, $P$ is ($k-\omega$) covered by $L$, which deduce to $P$ is inside $\Sigma$ (**).\par
+\indent From (*) and (**), we have $\Sigma \equiv \mho$ and theorem 1 is proved.
 \end{pf}
 \begin{thr}
-{\itshape($k-\omega$) region of an $k$-sensor ordered list $L =\{S_1,S_2,...,S_k\}$ is a convex region}.
+{\itshape($k,\omega$) region of an $k$-sensor list $L =\{S_1,S_2,...,S_k\}$ is a convex region}.
 \end{thr}
 \begin{pf}
-The intersection of two convex regions is a convex region. Hence, the intersection of any limited sets of convex region is a convex region. From theorem 1, it is obviously that ($k-\omega$) region of a list $L$ is intersections of convex regions and thus, we have theorem 2 proved.
+The intersection of two convex regions is a convex region. Hence, the intersection of any limited sets of convex region is a convex region. From theorem 1, it is obviously that ($k,\omega$) region of a list $L$ is intersections of convex regions and thus, we have theorem 2 proved.
 \end{pf}
-Figure 2 is an illustration of this theorem. By that, the blue hatching area is the ($k-\omega$) region of $L=\{S_1,S_2,S_3,S_4\}$ and $\omega = 60$.
+Figure \ref{multipleview} is an illustration of this theorem. By that, the shadow area is the ($5,60^o$) region of $L=\{S_1,S_2,S_3,S_4,S_5\}$.
 \begin{figure}[h]
-\begin{minipage}{.5\linewidth}
-	\centering
-	\includegraphics[scale=0.9]{hinhminhhoa.png}
-\end{minipage}
-\caption{($k-\omega$) region of $L=\{S_1,S_2,S_3,S_4\}$ and $\omega = 60$}
+\centering
+\includegraphics[scale=0.6]{Hinhanh/multipleview-region}
+\caption{($5,60^o$) region of $L=\{S_1,S_2,S_3,S_4,S_5\}$}
+\label{multipleview}
 \end{figure}

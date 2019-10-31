@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -6,42 +6,95 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{blanz2005face}
-V.~Blanz, P.~Grother, P.~J. Phillips, T.~Vetter, Face recognition based on
-  frontal views generated from non-frontal images, in: 2005 IEEE Computer
-  Society Conference on Computer Vision and Pattern Recognition (CVPR'05),
-  Vol.~2, IEEE, 2005, pp. 454--461.
+V.~Blanz, P.~Grother, P.~Phillips, T.~{Vetter.}, Face recognition based on
+  frontal views generated from non-frontal images, IEEE Computer Society
+  Conference on Computer Vision and Pattern Recognition (CVPR'05) 2 (2005)
+  454--461.
 
 \bibitem{wu2012achieving}
-Y.~Wu, X.~Wang, Achieving full view coverage with randomly-deployed
-  heterogeneous camera sensors, in: 2012 IEEE 32nd International Conference on
-  Distributed Computing Systems, IEEE, 2012, pp. 556--565.
+Y.~Wu, X.~{Wang.}, Achieving full view coverage with randomly-deployed
+  heterogeneous camera sensors, 2012, pp. 556--565.
+
+\bibitem{binh2016heuristic}
+H.~T.~T. Binh, N.~T.~M. Binh, N.~H. Hoang, P.~A. {Tu.}, Heuristic algorithm for
+  finding maximal breach path in wireless sensor network with omnidirectional
+  sensors, IEEE Region 10 Humanitarian Technology Conference (R10-HTC) (2016)
+  1--6.
+
+\bibitem{binh2017genetic}
+N.~T.~M. Binh, C.~M. Thang, N.~D. Nghia, H.~T.~T. {Binh.}, Genetic algorithm
+  for solving minimal exposure path in mobile sensor networks, IEEE Symposium
+  Series on Computational Intelligence (SSCI) (2017) 1--8.
+
+\bibitem{binh2019efficient}
+H.~T.~T. Binh, N.~T.~M. Binh, N.~H. Ngoc, D.~T. H.Ly, N.~D. {Nghia.}, Efficient
+  approximation approaches to minimal exposure path problem in probabilistic
+  coverage model for wireless sensor networks, Applied Soft Computing 76 (2019)
+  726--743.
+
+\bibitem{skraba2007energy}
+P.~Skraba, L.~Guibas, Energy efficient intrusion detection in camera sensor
+  networks, International Conference on Distributed Computing in Sensor Systems
+  (2007) 309--323.
+
+\bibitem{ai2006coverage}
+Coverage by directional sensors in randomly deployed wireless sensor networks,
+  Journal of Combinatorial Optimization 11.
+
+\bibitem{akyildiz2007survey}
+I.~Akyildiz, T.~Melodia, K.~{Chowdhury.}, A survey on wireless multimedia
+  sensor networks, Computer networks 51~(4) (2007) 921--960.
+
+\bibitem{guvensan2011coverage}
+M.~Guvensan, A.~G.{ Yavuz.}, On coverage issues in directional sensor networks:
+  A survey, Ad Hoc Networks 9~(7) (2011) 1238--1255.
+
+\bibitem{ma2005coverage}
+H.~Ma, Y.~{ Liu.}, On coverage problems of directional sensor networks,
+  International Conference on Mobile Ad-Hoc and Sensor Networks (2005)
+  721--731.
+
+\bibitem{soro2005coverage}
+S.~Soro, W.~{Heinzelman.}, On the coverage problem in video-based wireless
+  sensor networks, 2nd International Conference on Broadband Networks (2005)
+  932--939.
+
+\bibitem{chang2006collaborative}
+C.~C. Chang, H.~{Aghajan.}, Collaborative face orientation detection in
+  wireless image sensor networks, Proceedings of ACM SenSys Workshop on
+  Distributed Smart Cameras (2006).
 
 \bibitem{ma2012minimum}
-H.~Ma, M.~Yang, D.~Li, Y.~Hong, W.~Chen, Minimum camera barrier coverage in
-  wireless camera sensor networks, in: 2012 Proceedings IEEE INFOCOM, IEEE,
-  2012, pp. 217--225.
+H.~Ma, M.~Yang, D.~Li, Y.~Hong, W.~{Chen.}, Minimum camera barrier coverage in
+  wireless camera sensor networks, Proceedings IEEE INFOCOM (2012) 217--225.
 
-\bibitem{xu2016minimum}
-B.~Xu, Y.~Zhu, D.~Li, D.~Kim, W.~Wu, Minimum (k, $\omega$)-angle barrier
-  coverage in wireless camera sensor networks., IJSNet 21~(3) (2016) 179--188.
-
-\bibitem{tseng2012k}
-Y.-C. Tseng, P.-Y. Chen, W.-T. Chen, $ k $-angle object coverage problem in a
-  wireless sensor network, IEEE Sensors Journal 12~(12) (2012) 3408--3416.
-
-\bibitem{gage1992command}
-D.~W. Gage, Command control for many-robot systems, Tech. rep., Naval Command
-  Control and Ocean Surveillance Center Rdt And E Div San Diego CA (1992).
+\bibitem{makhoul2009adaptive}
+A.~Makhoul, R.~Saadi, C.~Pham, Adaptive scheduling of wireless video sensor
+  nodes for surveillance applications, Proceedings of the 4th ACM workshop on
+  Performance monitoring and measurement of heterogeneous wireless and wired
+  networks (2009) 54--60.
 
 \bibitem{wang2011barrier}
-Y.~Wang, G.~Cao, Barrier coverage in camera sensor networks, in: Proceedings of
+Y.~Wang, G.~{Cao.}, Barrier coverage in camera sensor networks, Proceedings of
   the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and
-  Computing, ACM, 2011, p.~12.
+  Computing (2011) 12.
+
+\bibitem{wang2013achieving}
+Y.~Wang, G.~{Cao.}, Achieving full-view coverage in camera sensor networks, ACM
+  Transactions on Sensor Networks (ToSN) 10~(1) (2013) 3.
+
+\bibitem{tseng2012k}
+Y.~C. Tseng, P.~Y. Chen, W.~T. {Chen.}, $ k $-angle object coverage problem in
+  a wireless sensor network, IEEE Sensors Journal 12~(12) (2012) 3408--3416.
+
+\bibitem{xu2016minimum}
+B.~Xui, Y.~Zhu, D.~Li, D.~Kim, W.~{Wi.}, Minimum (k, $\omega$)-angle barrier
+  coverage in wireless camera sensor networks., IJSNet 21~(3) (2016) 179--188.
 
 \bibitem{chen2008measuring}
-A.~Chen, T.~H. Lai, D.~Xuan, Measuring and guaranteeing quality of
-  barrier-coverage in wireless sensor networks, in: Proceedings of the 9th ACM
-  international symposium on Mobile ad hoc networking and computing, ACM, 2008,
-  pp. 421--430.
+A.~Chen, T.~H. Lai, D.~{Xuan.}, Measuring and guaranteeing quality of
+  barrier-coverage in wireless sensor networks, Proceedings of the 9th ACM
+  international symposium on Mobile ad hoc networking and computing (2008)
+  421--430.
 
 \end{thebibliography}

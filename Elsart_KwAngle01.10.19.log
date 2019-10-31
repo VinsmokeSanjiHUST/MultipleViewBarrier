@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.31)  26 OCT 2019 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.30)  26 OCT 2019 11:41
 entering extended mode
 **./Elsart_KwAngle01.10.19.tex
 (Elsart_KwAngle01.10.19.tex
@@ -131,7 +131,7 @@ Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )))))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+Package: hyperref 2019/06/12 v6.88h Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -149,7 +149,7 @@ Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -179,7 +179,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 \Hy@pagecounter=\count99
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2019/06/12 v6.88h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -188,33 +188,33 @@ Now handling font encoding PD1 ...
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Hyper figures OFF on input line 4550.
+Package hyperref Info: Link nesting OFF on input line 4555.
+Package hyperref Info: Hyper index ON on input line 4558.
+Package hyperref Info: Plain pages OFF on input line 4565.
+Package hyperref Info: Backreferencing OFF on input line 4570.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
+Package hyperref Info: Bookmarks ON on input line 4803.
 \c@Hy@tempcnt=\count101
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5125.
+LaTeX Info: Redefining \url on input line 5156.
 \XeTeXLinkMargin=\dimen119
 \Fld@menulength=\count102
 \Field@Width=\dimen120
 \Fld@charsize=\dimen121
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
+Package hyperref Info: Hyper figures OFF on input line 6411.
+Package hyperref Info: Link nesting OFF on input line 6416.
+Package hyperref Info: Hyper index ON on input line 6419.
+Package hyperref Info: backreferencing OFF on input line 6426.
+Package hyperref Info: Link coloring OFF on input line 6431.
+Package hyperref Info: Link coloring with OCG OFF on input line 6436.
+Package hyperref Info: PDF/A mode OFF on input line 6441.
+LaTeX Info: Redefining \ref on input line 6481.
+LaTeX Info: Redefining \pageref on input line 6485.
 \Hy@abspage=\count103
 \c@Item=\count104
 \c@Hfootnote=\count105
@@ -222,7 +222,7 @@ LaTeX Info: Redefining \pageref on input line 6454.
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+File: hpdftex.def 2019/06/12 v6.88h Hyperref driver for pdfTeX
 \Fld@listcount=\count106
 \c@bookmark@seq@number=\count107
 
@@ -437,37 +437,70 @@ LaTeX Warning: Label `fig:' multiply defined.
 LaTeX Warning: Label `fig:' multiply defined.
 
 
+LaTeX Warning: Label `fig:' multiply defined.
+
+
 Package natbib Warning: Citation `blanz2005face' multiply defined.
 
 
 Package natbib Warning: Citation `wu2012achieving' multiply defined.
 
 
+Package natbib Warning: Citation `binh2016heuristic' multiply defined.
+
+
 LaTeX Warning: Label `fig:' multiply defined.
+
+
+Package natbib Warning: Citation `binh2017genetic' multiply defined.
+
+
+Package natbib Warning: Citation `binh2019efficient' multiply defined.
+
+
+Package natbib Warning: Citation `skraba2007energy' multiply defined.
+
+
+Package natbib Warning: Citation `ai2006coverage' multiply defined.
+
+
+Package natbib Warning: Citation `akyildiz2007survey' multiply defined.
+
+
+Package natbib Warning: Citation `guvensan2011coverage' multiply defined.
+
+
+Package natbib Warning: Citation `ma2005coverage' multiply defined.
+
+
+Package natbib Warning: Citation `soro2005coverage' multiply defined.
+
+
+Package natbib Warning: Citation `chang2006collaborative' multiply defined.
 
 
 Package natbib Warning: Citation `ma2012minimum' multiply defined.
 
 
-Package natbib Warning: Citation `xu2016minimum' multiply defined.
+LaTeX Warning: Label `fig:' multiply defined.
 
 
-Package natbib Warning: Citation `tseng2012k' multiply defined.
-
-
-Package natbib Warning: Citation `gage1992command' multiply defined.
+Package natbib Warning: Citation `makhoul2009adaptive' multiply defined.
 
 
 Package natbib Warning: Citation `wang2011barrier' multiply defined.
 
 
+Package natbib Warning: Citation `wang2013achieving' multiply defined.
+
+
+Package natbib Warning: Citation `tseng2012k' multiply defined.
+
+
+Package natbib Warning: Citation `xu2016minimum' multiply defined.
+
+
 Package natbib Warning: Citation `chen2008measuring' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
 
 
 LaTeX Warning: Label `fig:' multiply defined.
@@ -601,7 +634,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [1
 
-{C:/Users/DELL/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{C:/Users/sanji/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 LaTeX Font Info:    Try loading font information for OMS+qpl on input line 109.
 
 LaTeX Font Info:    No file OMSqpl.fd. on input line 109.
@@ -621,20 +654,8 @@ Package natbib Warning: Citation `megerian2002exposure' on page 3 undefined on
 input line 1.
 
 
-Package natbib Warning: Citation `binh2016heuristic' on page 3 undefined on inp
-ut line 1.
-
-
 Package natbib Warning: Citation `liu2013percolation' on page 3 undefined on in
 put line 1.
-
-
-Package natbib Warning: Citation `binh2017genetic' on page 3 undefined on input
- line 1.
-
-
-Package natbib Warning: Citation `binh2019efficient' on page 3 undefined on inp
-ut line 1.
 
 
 Package natbib Warning: Citation `liu2008strong' on page 3 undefined on input l
@@ -649,82 +670,43 @@ Package natbib Warning: Citation `he2010distributed' on page 3 undefined on inp
 ut line 1.
 
 
-Package natbib Warning: Citation `skraba2007energy' on page 3 undefined on inpu
-t line 1.
-
-
 Package natbib Warning: Citation `chen2013energy' on page 3 undefined on input 
 line 1.
 
-
-Package natbib Warning: Citation `ai2006coverage' on page 3 undefined on input 
-line 2.
-
-
-Package natbib Warning: Citation `akyildiz2007survey' on page 3 undefined on in
-put line 2.
-
-
-Package natbib Warning: Citation `guvensan2011coverage' on page 3 undefined on 
-input line 2.
-
-
-Package natbib Warning: Citation `ma2005coverage' on page 3 undefined on input 
-line 2.
-
-
-Package natbib Warning: Citation `soro2005coverage' on page 3 undefined on inpu
-t line 2.
-
-
-Package natbib Warning: Citation `chang2006collaborative' on page 3 undefined o
-n input line 2.
-
-
-Package natbib Warning: Citation `makhoul2009adaptive' on page 3 undefined on i
-nput line 2.
-
-
-Package natbib Warning: Citation `chang2006collaborative' on page 3 undefined o
-n input line 4.
-
-
-Package natbib Warning: Citation `wang2013achieving' on page 3 undefined on inp
-ut line 7.
-
 [3]
-<wrongDijstra.pdf, id=118, 441.54361pt x 193.90543pt>
+<wrongDijstra.pdf, id=143, 441.54361pt x 193.90543pt>
 File: wrongDijstra.pdf Graphic file (type pdf)
 <use wrongDijstra.pdf>
 Package pdftex.def Info: wrongDijstra.pdf  used on input line 12.
 (pdftex.def)             Requested size: 264.9282pt x 116.34415pt.
-<komega.pdf, id=121, 293.11307pt x 288.23483pt>
+<komega.pdf, id=146, 293.11307pt x 288.23483pt>
 File: komega.pdf Graphic file (type pdf)
 <use komega.pdf>
 Package pdftex.def Info: komega.pdf  used on input line 20.
 (pdftex.def)             Requested size: 175.86919pt x 172.94221pt.
 ) (theorem_version3.tex [4] [5 <./wrongDijstra.pdf> <./komega.pdf>]
-<innersafe.pdf, id=175, 233.58267pt x 201.1485pt>
+<innersafe.pdf, id=200, 233.58267pt x 201.1485pt>
 File: innersafe.pdf Graphic file (type pdf)
 <use innersafe.pdf>
-Package pdftex.def Info: innersafe.pdf  used on input line 24.
+Package pdftex.def Info: innersafe.pdf  used on input line 25.
 (pdftex.def)             Requested size: 140.15068pt x 120.69002pt.
-<hinhminhhoa.png, id=176, 483.0045pt x 230.3004pt>
+ [6 <./innersafe.pdf>]
+<hinhminhhoa.png, id=221, 483.0045pt x 230.3004pt>
 File: hinhminhhoa.png Graphic file (type png)
 <use hinhminhhoa.png>
-Package pdftex.def Info: hinhminhhoa.png  used on input line 51.
+Package pdftex.def Info: hinhminhhoa.png  used on input line 52.
 (pdftex.def)             Requested size: 434.70003pt x 207.26843pt.
 
-Overfull \hbox (200.70003pt too wide) in paragraph at lines 51--52
+Overfull \hbox (200.70003pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
-) (preliminaries.tex [6 <./innersafe.pdf>]
+) (preliminaries.tex
 
 Package natbib Warning: Citation `megerian2002exposure' on page 7 undefined on 
 input line 5.
 
-<hinhanh/sensorView.png, id=199, 829.59938pt x 456.95718pt>
+<hinhanh/sensorView.png, id=224, 829.59938pt x 456.95718pt>
 File: hinhanh/sensorView.png Graphic file (type png)
 <use hinhanh/sensorView.png>
 Package pdftex.def Info: hinhanh/sensorView.png  used on input line 18.
@@ -733,12 +715,12 @@ Package pdftex.def Info: hinhanh/sensorView.png  used on input line 18.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./hinhminhhoa.png>]
-<groupSensor_Version2.pdf, id=215, 235.87323pt x 237.35175pt>
+<groupSensor_Version2.pdf, id=240, 235.87323pt x 237.35175pt>
 File: groupSensor_Version2.pdf Graphic file (type pdf)
 <use groupSensor_Version2.pdf>
 Package pdftex.def Info: groupSensor_Version2.pdf  used on input line 48.
 (pdftex.def)             Requested size: 176.90448pt x 178.01335pt.
-<exposure.pdf, id=216, 341.6223pt x 341.97562pt>
+<exposure.pdf, id=241, 341.6223pt x 341.97562pt>
 File: exposure.pdf Graphic file (type pdf)
 <use exposure.pdf>
 Package pdftex.def Info: exposure.pdf  used on input line 52.
@@ -811,7 +793,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Warning: Reference `sec:exp' on page 11 undefined on input line 13.
 
 [11]
-<setSensors_1.pdf, id=281, 315.8771pt x 290.85262pt>
+<setSensors_1.pdf, id=306, 315.8771pt x 290.85262pt>
 File: setSensors_1.pdf Graphic file (type pdf)
 <use setSensors_1.pdf>
 Package pdftex.def Info: setSensors_1.pdf  used on input line 19.
@@ -821,7 +803,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
-<setSensors_2.pdf, id=282, 315.8771pt x 290.85262pt>
+<setSensors_2.pdf, id=307, 315.8771pt x 290.85262pt>
 File: setSensors_2.pdf Graphic file (type pdf)
 <use setSensors_2.pdf>
 Package pdftex.def Info: setSensors_2.pdf  used on input line 23.
@@ -831,7 +813,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 23--24
 [][] 
  []
 
-<setSensors_3.pdf, id=283, 316.27762pt x 290.85262pt>
+<setSensors_3.pdf, id=308, 316.27762pt x 290.85262pt>
 File: setSensors_3.pdf Graphic file (type pdf)
 <use setSensors_3.pdf>
 Package pdftex.def Info: setSensors_3.pdf  used on input line 27.
@@ -841,7 +823,7 @@ Overfull \hbox (17.73698pt too wide) in paragraph at lines 27--28
 [][] 
  []
 
-<setSensors_4.pdf, id=284, 315.8771pt x 290.85262pt>
+<setSensors_4.pdf, id=309, 315.8771pt x 290.85262pt>
 File: setSensors_4.pdf Graphic file (type pdf)
 <use setSensors_4.pdf>
 Package pdftex.def Info: setSensors_4.pdf  used on input line 31.
@@ -851,7 +833,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 31--32
 [][] 
  []
 
-<setSensors_5.pdf, id=285, 315.8771pt x 291.25212pt>
+<setSensors_5.pdf, id=310, 315.8771pt x 291.25212pt>
 File: setSensors_5.pdf Graphic file (type pdf)
 <use setSensors_5.pdf>
 Package pdftex.def Info: setSensors_5.pdf  used on input line 35.
@@ -861,7 +843,7 @@ Overfull \hbox (17.53673pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
-<setSensors_6.pdf, id=286, 315.8771pt x 291.25212pt>
+<setSensors_6.pdf, id=311, 315.8771pt x 291.25212pt>
 File: setSensors_6.pdf Graphic file (type pdf)
 <use setSensors_6.pdf>
 Package pdftex.def Info: setSensors_6.pdf  used on input line 39.
@@ -899,7 +881,7 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 158.
 
-<Dynamic_Partition.pdf, id=344, 273.68446pt x 249.79422pt>
+<Dynamic_Partition.pdf, id=369, 273.68446pt x 249.79422pt>
 File: Dynamic_Partition.pdf Graphic file (type pdf)
 <use Dynamic_Partition.pdf>
 Package pdftex.def Info: Dynamic_Partition.pdf  used on input line 173.
@@ -980,7 +962,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/OmegaEffect/coverage/k4.pdf, id=409, 253.5874pt x 210.2545pt>
+<Hinhanh/OmegaEffect/coverage/k4.pdf, id=434, 253.5874pt x 210.2545pt>
 File: Hinhanh/OmegaEffect/coverage/k4.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/coverage/k4.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/coverage/k4.pdf  used on input lin
@@ -1033,7 +1015,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/OmegaEffect/coverage/k3.pdf, id=410, 253.5874pt x 210.26154pt>
+<Hinhanh/OmegaEffect/coverage/k3.pdf, id=435, 253.5874pt x 210.26154pt>
 File: Hinhanh/OmegaEffect/coverage/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/coverage/k3.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/coverage/k3.pdf  used on input lin
@@ -1089,7 +1071,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/OmegaEffect/time/k3.pdf, id=411, 268.56537pt x 210.2515pt>
+<Hinhanh/OmegaEffect/time/k3.pdf, id=436, 268.56537pt x 210.2515pt>
 File: Hinhanh/OmegaEffect/time/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/time/k3.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/time/k3.pdf  used on input line 71
@@ -1142,7 +1124,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/OmegaEffect/time/k4.pdf, id=412, 268.56537pt x 210.2545pt>
+<Hinhanh/OmegaEffect/time/k4.pdf, id=437, 268.56537pt x 210.2545pt>
 File: Hinhanh/OmegaEffect/time/k4.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/time/k4.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/time/k4.pdf  used on input line 76
@@ -1198,7 +1180,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/OmegaEffect/probability/k3.pdf, id=413, 271.53845pt x 208.68565pt>
+<Hinhanh/OmegaEffect/probability/k3.pdf, id=438, 271.53845pt x 208.68565pt>
 File: Hinhanh/OmegaEffect/probability/k3.pdf Graphic file (type pdf)
 <use Hinhanh/OmegaEffect/probability/k3.pdf>
 Package pdftex.def Info: Hinhanh/OmegaEffect/probability/k3.pdf  used on input 
@@ -1306,7 +1288,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf, id=414, 253.5874pt x 212.5
+<Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf, id=439, 253.5874pt x 212.5
 6013pt>
 File: Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf Graphic file (type pdf
 )
@@ -1361,7 +1343,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf, id=415, 253.5874pt x 218.55
+<Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf, id=440, 253.5874pt x 218.55
 351pt>
 File: Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf Graphic file (type pdf)
 
@@ -1419,7 +1401,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/SensorNumberEffect/time/k3omega105.pdf, id=416, 259.54265pt x 212.3152
+<Hinhanh/SensorNumberEffect/time/k3omega105.pdf, id=441, 259.54265pt x 212.3152
 2pt>
 File: Hinhanh/SensorNumberEffect/time/k3omega105.pdf Graphic file (type pdf)
 <use Hinhanh/SensorNumberEffect/time/k3omega105.pdf>
@@ -1473,7 +1455,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/SensorNumberEffect/time/k4omega65.pdf, id=417, 268.56938pt x 212.31923
+<Hinhanh/SensorNumberEffect/time/k4omega65.pdf, id=442, 268.56938pt x 212.31923
 pt>
 File: Hinhanh/SensorNumberEffect/time/k4omega65.pdf Graphic file (type pdf)
 <use Hinhanh/SensorNumberEffect/time/k4omega65.pdf>
@@ -1530,7 +1512,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/SensorNumberEffect/probability/k3omega105.pdf, id=418, 271.5425pt x 21
+<Hinhanh/SensorNumberEffect/probability/k3omega105.pdf, id=443, 271.5425pt x 21
 2.32123pt>
 File: Hinhanh/SensorNumberEffect/probability/k3omega105.pdf Graphic file (type 
 pdf)
@@ -1585,7 +1567,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Hinhanh/SensorNumberEffect/probability/k4omega65.pdf, id=419, 271.5425pt x 212
+<Hinhanh/SensorNumberEffect/probability/k4omega65.pdf, id=444, 271.5425pt x 212
 .32726pt>
 File: Hinhanh/SensorNumberEffect/probability/k4omega65.pdf Graphic file (type p
 df)
@@ -1619,7 +1601,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [17] [18 <./Hinhanh/OmegaEffect/coverage/k4.pdf> <./Hinhanh/OmegaEffect/coverag
 e/k3.pdf>]
-<Hinhanh/kEffect/main.pdf, id=461, 251.29985pt x 208.99681pt>
+<Hinhanh/kEffect/main.pdf, id=482, 251.29985pt x 208.99681pt>
 File: Hinhanh/kEffect/main.pdf Graphic file (type pdf)
 <use Hinhanh/kEffect/main.pdf>
 Package pdftex.def Info: Hinhanh/kEffect/main.pdf  used on input line 161.
@@ -1629,9 +1611,11 @@ Package pdftex.def Info: Hinhanh/kEffect/main.pdf  used on input line 161.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [19 <./Hinhanh/OmegaEffect/time/k3.pdf> <./Hinhanh/OmegaEffect/time/k4.pdf>]
-(Elsart_KwAngle01.10.19.bbl [20 <./Hinhanh/OmegaEffect/probability/k3.pdf>])
-(Elsart_KwAngle01.10.19.bblpdfTeX warning (ext4): destination with the same ide
-ntifier (name{cite.blanz2005face}) has been already used, duplicate ignored
+(Elsart_KwAngle01.10.19.bbl [20 <./Hinhanh/OmegaEffect/probability/k3.pdf>]
+[21 <./Hinhanh/SensorNumberEffect/coverage/k3omega105.pdf> <./Hinhanh/SensorNum
+berEffect/coverage/k4omega65.pdf>]) (Elsart_KwAngle01.10.19.bblpdfTeX warning (
+ext4): destination with the same identifier (name{cite.blanz2005face}) has been
+ already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.8 \bibitem{blanz2005face}
@@ -1640,40 +1624,108 @@ ntifier (name{cite.wu2012achieving}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.14 \bibitem{wu2012achieving}
-                               [21 <./Hinhanh/SensorNumberEffect/coverage/k3ome
-ga105.pdf> <./Hinhanh/SensorNumberEffect/coverage/k4omega65.pdf>]pdfTeX warning
- (ext4): destination with the same identifier (name{cite.ma2012minimum}) has be
-en already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.19 \bibitem{ma2012minimum}
-                            pdfTeX warning (ext4): destination with the same id
-entifier (name{cite.xu2016minimum}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 \bibitem{xu2016minimum}
-                            pdfTeX warning (ext4): destination with the same id
-entifier (name{cite.tseng2012k}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.28 \bibitem{tseng2012k}
-                         pdfTeX warning (ext4): destination with the same ident
-ifier (name{cite.gage1992command}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 \bibitem{gage1992command}
                               pdfTeX warning (ext4): destination with the same 
-identifier (name{cite.wang2011barrier}) has been already used, duplicate ignore
-d
-<to be read again> 
-                   \relax 
-l.36 \bibitem{wang2011barrier}
-                              pdfTeX warning (ext4): destination with the same 
-identifier (name{cite.chen2008measuring}) has been already used, duplicate igno
+identifier (name{cite.binh2016heuristic}) has been already used, duplicate igno
 red
 <to be read again> 
                    \relax 
-l.41 \bibitem{chen2008measuring}
+l.18 \bibitem{binh2016heuristic}
+                                 [22 <./Hinhanh/SensorNumberEffect/time/k3omega
+105.pdf> <./Hinhanh/SensorNumberEffect/time/k4omega65.pdf>]pdfTeX warning (ext4
+): destination with the same identifier (name{cite.binh2017genetic}) has been a
+lready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 \bibitem{binh2017genetic}
+                              pdfTeX warning (ext4): destination with the same 
+identifier (name{cite.binh2019efficient}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.29 \bibitem{binh2019efficient}
+                                pdfTeX warning (ext4): destination with the sam
+e identifier (name{cite.skraba2007energy}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.35 \bibitem{skraba2007energy}
+                               pdfTeX warning (ext4): destination with the same
+ identifier (name{cite.ai2006coverage}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.40 \bibitem{ai2006coverage}
+                             pdfTeX warning (ext4): destination with the same i
+dentifier (name{cite.akyildiz2007survey}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.44 \bibitem{akyildiz2007survey}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{cite.guvensan2011coverage}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.48 \bibitem{guvensan2011coverage}
+                                   pdfTeX warning (ext4): destination with the 
+same identifier (name{cite.ma2005coverage}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.52 \bibitem{ma2005coverage}
+                             pdfTeX warning (ext4): destination with the same i
+dentifier (name{cite.soro2005coverage}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.57 \bibitem{soro2005coverage}
+                               pdfTeX warning (ext4): destination with the same
+ identifier (name{cite.chang2006collaborative}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.62 \bibitem{chang2006collaborative}
+                                     pdfTeX warning (ext4): destination with th
+e same identifier (name{cite.ma2012minimum}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.67 \bibitem{ma2012minimum}
+                             [23 <./Hinhanh/SensorNumberEffect/probability/k3om
+ega105.pdf> <./Hinhanh/SensorNumberEffect/probability/k4omega65.pdf>]pdfTeX war
+ning (ext4): destination with the same identifier (name{cite.makhoul2009adaptiv
+e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 \bibitem{makhoul2009adaptive}
+                                  pdfTeX warning (ext4): destination with the s
+ame identifier (name{cite.wang2011barrier}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.77 \bibitem{wang2011barrier}
+                              pdfTeX warning (ext4): destination with the same 
+identifier (name{cite.wang2013achieving}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.82 \bibitem{wang2013achieving}
+                                pdfTeX warning (ext4): destination with the sam
+e identifier (name{cite.tseng2012k}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \bibitem{tseng2012k}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.xu2016minimum}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \bibitem{xu2016minimum}
+                            pdfTeX warning (ext4): destination with the same id
+entifier (name{cite.chen2008measuring}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.94 \bibitem{chen2008measuring}
                                 )
 
 Package natbib Warning: There were undefined citations.
@@ -1682,10 +1734,7 @@ Package natbib Warning: There were undefined citations.
 Package natbib Warning: There were multiply defined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
-[22 <./Hinhanh/SensorNumberEffect/time/k3omega105.pdf> <./Hinhanh/SensorNumberE
-ffect/time/k4omega65.pdf>] [23 <./Hinhanh/SensorNumberEffect/probability/k3omeg
-a105.pdf> <./Hinhanh/SensorNumberEffect/probability/k4omega65.pdf>] [24 <./Hinh
-anh/kEffect/main.pdf>]
+[24 <./Hinhanh/kEffect/main.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
  (Elsart_KwAngle01.10.19.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
@@ -1706,40 +1755,41 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 9532 strings out of 492895
- 137874 string characters out of 3133482
- 262453 words of memory out of 3000000
- 13104 multiletter control sequences out of 15000+200000
+ 9592 strings out of 492895
+ 138949 string characters out of 3133479
+ 262937 words of memory out of 3000000
+ 13153 multiletter control sequences out of 15000+200000
  50526 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,38n,38p,1907b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}{C:/Program
  Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-rm.enc}<C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/tex-gyre/qplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/te
-x-gyre/qplr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplri.
-pfb>
-Output written on Elsart_KwAngle01.10.19.pdf (24 pages, 1309105 bytes).
+9/fonts/type1/public/arev/ArevSans-Oblique.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/arev/ArevSans-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+s10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/t
+ex-gyre/qplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplr.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on Elsart_KwAngle01.10.19.pdf (24 pages, 1127574 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 147 named destinations out of 1000 (max. 500000)
+ 718 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
  299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
