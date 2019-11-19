@@ -1,6 +1,6 @@
-To solve this problem, the monitoring region is partitioned into several small rectangles using the proposed Dynamic Partition method. After that, we try to figure out if there is a continuous barrier from the left side to the right side of the region consisting of rectangles which are multiple-view covered. The details are shown in the subsequent sections.
+To solve this problem, the monitoring region is partitioned into several small rectangles using the proposed Adaptive Partition method. After that, we try to figure out if there is a continuous barrier from the left side to the right side of the region consisting of rectangles which are multiple-view covered. The details are shown in the subsequent sections.
 
-\subsubsection{multiple-view verification on a rectangle}
+\subsubsection{Multiple-view verification on a rectangle}
 \label{subsec:01}
 % introduction idea
 Based on theorem 2, we can conclude that in order to verify the multiple-view coverage on a rectangle, it is sufficient to check whether all four vertices of that rectangle is multiple-view covered by an common list of sensors. Using this conclusion, we propose an algorithm to verify multiple-view coverage on a rectangle, and for the optimization of the second problem, we try to find the list that multiple-view cover the rectangle with the largest coverage value. 
@@ -18,10 +18,10 @@ The following steps describes the idea to verify if rectangle $ABCD$ is ($k,\ome
 		\item Random method: A random list is chosen, this list is expected to reveal the expectation of coverage value of all the sensor lists that $(k-\omega)$ cover the considered node.
 	\end{itemize}
 \end{description}
-\par Note that to verify ($k,\omega$) coverage on $ABCD$, it is sufficient to stop at {\bfseries Step 3}. {\bfseries Step 4} is necessary to perform evaluation of quality coverage on $ABCD$. Criteria for selection in {\bfseries Step 4} is called {\itshape node handling method}. In this paper, we consider two node handling methods, which are the max and the random ones. The max method chooses the list which offers the highest coverage value. The random one picks a list randomly, which is expected to give the expectation of coverage value of all lists that ($k,\omega$) covered the rectangle. Different node handling methods are considered to guarantee that our algorithm is convergent and stable in different scenarios (detailed results can be found later in section \ref{sec:exp})\par
+\par Note that to verify ($k,\omega$) coverage on $ABCD$, it is sufficient to stop at {\bfseries Step 3}. {\bfseries Step 4} is necessary to perform evaluation of quality coverage on $ABCD$. Criteria for selection in {\bfseries Step 4} is called {\itshape node handling method}. In this paper, we consider two node handling methods, which are the max and the random ones. Different node handling methods are considered to guarantee that our algorithm is convergent and stable in different scenarios. They also contribute to offer alternative options in analysing the $(k-\omega)$ barrier coverage problem (detailed results can be found later in section \ref{sec:exp})\par
 The key to implement this idea is at {\bfseries Step 2}. Our approach to this problem is very natural. First, sort $G$ in counter-clockwise order around $A$. Then, we consider each sensor in $G$ sequentially. If the sensor being considered satisfies some conditions, we put it into a list (call this list $L$). We do that until size of $L$ is equal to $k$. Then, $L$ is called a valid list. Figure \ref{finding} illustrates how to choose a valid list. In figure \ref{finding}, black vector denotes the sensor that is chosen to put into the list, while red vector denotes candidates to be chosen.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\begin{minipage}{.3\linewidth}
 		\includegraphics[scale=.5]{setSensors_1.pdf}
 	\end{minipage}
@@ -167,19 +167,19 @@ The first element of $L$ can be any sensor in $G$ since it doesn't require any c
 \subsubsection{Finding a barrier in a monitoring region}
 
 
-a, Partitioning the monitoring region by Dynamic Partition method
+a, Partitioning the monitoring region by Adaptive Partition method
 
 \label{subsection1}
 
-To find a barrier in the monitoring region, we first determine the areas that are multiple-view covered inside the region of interest $\Omega$. To solve this problem, we partition $\Omega$ into multiple small rectangles and check whether these rectangles are multiple-view covered or not. However, uniform partitioning often requires a high computation time especially when the $\Omega$ is large. To overcome this challenge, we propose a new partition method called Dynamic Partition. The idea of the Dynamic Partition method is as follows: only the rectangles which are not multiple-view covered will be partitioned into smaller rectangles, otherwise, they are kept untouched. \par
+To find a barrier in the monitoring region, we first determine the areas that are multiple-view covered inside the region of interest $\Omega$. To solve this problem, we partition $\Omega$ into multiple small rectangles and check whether these rectangles are multiple-view covered or not. However, uniform partitioning often requires a high computation time especially when the $\Omega$ is large. To overcome this challenge, we propose a new partition method called Adaptive Partition. The idea of the Adaptive Partition method is as follows: only the rectangles which are not multiple-view covered will be partitioned into smaller rectangles, otherwise, they are kept untouched. \par
 The first rectangle to be checked is the monitoring region. 
 Using the algorithm in \ref{subsec:01}, if a rectangle is multiple-view covered, mark it as true, otherwise, split it into four equal sub-rectangles. After a rectangle is split, smaller rectangles are generated and the process of checking and splitting is applied to these new rectangles. A rectangle will not be split if it is multiple-view covered or its size reaches a predefined limited value. The smaller the limited size is, the more precise the result of our algorithm can get. This condition guarantees our algorithm not to go into an infinite loop. The process is illustrated in Figure \ref{dynamic}.
 %\input{DynamicPartition}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\begin{center}
 		\includegraphics[scale=1.]{Dynamic_Partition.pdf}
 	\end{center}
-	\caption{Illustration of Dynamic Partitioning}
+	\caption{Illustration of Adaptive Partitioning}
 	\label{dynamic}
 \end{figure}
 
@@ -232,7 +232,7 @@ The pseudo code of the method is described in Algorithm \ref{alg3}
 				\ElseIf{\tempNode has not reached the minimum size}{split \tempNode into 4 sub-rectangles\;
 					add 4 sub-rectangles of \tempNode to \QUEUE}
 			}
-			\caption{Dynamic Partition}
+			\caption{Adaptive Partition}
 			\label{alg3}
 		\end{algorithm}
 	\end{minipage}
